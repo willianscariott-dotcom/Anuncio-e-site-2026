@@ -52,7 +52,7 @@
 | Rota | Arquivo |
 |---|---|
 | `/` | `src/pages/index.astro` |
-| `/robots.txt` | `src/pages/robots.txt.ts` (prerender; `Disallow` fora de produção) |
+| `/robots.txt` | `src/pages/robots.txt.ts` (prerender; sem índice fora de produção via `noindex` nas páginas) |
 | `/blog/[slug]` | `src/pages/blog/[slug].astro` |
 | `/portfolio/[slug]` | `src/pages/portfolio/[slug].astro` |
 
@@ -73,4 +73,5 @@
 
 - Removidos os arquivos Next.js do checkout da branch (`master` permanece intacto).
 - Copiados o Astro, as configurações, `public/` (vazio), `README.md`, `PRODUCT.md` e `docs/` do código novo.
+- Em construção, as páginas emitem `noindex, nofollow` (meta) e o `robots.txt` usa `Allow: /` (sem `Disallow`) para o crawler enxergar o `noindex` sem conflito; sitemap apenas em produção.
 - Pendência de commit separado: portar `public/images/portfolio/*.webp` e `public/images/willian-souza.webp` quando o novo site tiver portfólio.
