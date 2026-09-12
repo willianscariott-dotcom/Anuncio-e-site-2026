@@ -1,0 +1,131 @@
+@import '@fontsource-variable/archivo';
+@import '@fontsource-variable/inter';
+
+:root {
+  --color-bg: #0b0d0f;
+  --color-surface: #171a1f;
+  --color-text: #f6f3ed;
+  --color-text-muted: #c6c2b8;
+  --color-bg-light: #f4f0e8;
+  --color-text-light: #17191d;
+  --color-accent: #ff6a00;
+  --font-display: 'Archivo Variable', 'Archivo', Arial, sans-serif;
+  --font-body: 'Inter Variable', 'Inter', Arial, sans-serif;
+  --radius-sm: 2px;
+  --radius-md: 5px;
+  --radius-card: 6px;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --content-max: 72rem;
+  --content-pad: 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  line-height: 1.1;
+  margin: 0 0 var(--space-4);
+}
+
+a {
+  color: var(--color-accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  z-index: 100;
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-bg-light);
+  color: var(--color-text-light);
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+.header {
+  border-bottom: 1px solid var(--color-surface);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  min-height: 4rem;
+}
+
+.header__inner,
+.footer,
+.main {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--content-pad);
+}
+
+.header__brand {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.main {
+  padding-block: var(--space-12);
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  justify-content: space-between;
+  padding-block: var(--space-8);
+  border-top: 1px solid var(--color-surface);
+  margin-top: var(--space-12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

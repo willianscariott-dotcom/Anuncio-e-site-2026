@@ -1,0 +1,26 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export const prerender = true;
+
+export const getStaticPaths = (async () => {
+  const casos = await getCollection('estudosDeCaso', ({ data }) => data.estado === 'publicado');
+  return casos.map((caso) => ({
+    params: { slug: caso.id },
+    props: { caso },
+  }));
+}) satisfies GetStaticPaths;
+
+const { caso } = Astro.props;
+const { Content } = await render(caso);
+---
+
+<BaseLayout title={caso.data.titulo} description={caso.data.resumo}>
+  <article>
+    <h1>{caso.data.titulo}</h1>
+    <p>{caso.data.resumo}</p>
+    <Content />
+  </article>
+</BaseLayout>

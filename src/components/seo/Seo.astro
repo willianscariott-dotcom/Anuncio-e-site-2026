@@ -1,0 +1,26 @@
+---
+import { SITE, SITE_STATE } from '../../config/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+
+const docTitle = title ? `${title} | ${SITE.brand}` : SITE.brand;
+const docDescription = description ?? SITE.tagline;
+const robots = SITE_STATE === 'production' ? 'index, follow' : 'noindex, nofollow';
+const canonical = `${SITE.url}${Astro.url.pathname}`;
+---
+
+<title>{docTitle}</title>
+<meta name="description" content={docDescription} />
+<meta name="robots" content={robots} />
+<link rel="canonical" href={canonical} />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content={SITE.brand} />
+<meta property="og:title" content={docTitle} />
+<meta property="og:description" content={docDescription} />
+<meta property="og:url" content={canonical} />
+<meta property="og:locale" content={SITE.language} />

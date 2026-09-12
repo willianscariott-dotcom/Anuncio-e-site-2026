@@ -1,0 +1,970 @@
+[
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Odontologia - Dentista geral / clínica odontologica",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Odontologia - Implante dentario",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Odontologia - Ortodontia (aparelhos, alinhadores)",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Odontologia - Estetica dental (clareamento, facetas)",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Medicina - Dermatologia",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Medicina - Cardiologia",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Medicina - Ortopedia",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Medicina - Gastroenterologia",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Medicina - Endocrinologia",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Medicina - Pediatria",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Medicina - Ginecologia / obstetricia",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Estetica - Clinicas de estetica (botox, preenchimento)",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Estetica - Harmonizacao facial",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Estetica - Depilacao a laser",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Estetica - Tratamentos (celulite, gordura, flacidez)",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Saude mental - Psicologos e psicoterapeutas",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Saude mental - Psiquiatras",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Saude mental - Terapias online",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Saude mental - Clinicas de reabilitacao",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Outros - Fisioterapia e pilates clinico",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Outros - Nutricao e emagrecimento",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Outros - Fonoaudiologia",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Outros - Oftalmologia / laser para visao",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Saude e estetica",
+    "Subnicho": "Outros - Exames e diagnosticos (imagem, laboratorios)",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Advocacia",
+    "Subnicho": "Direito trabalhista",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Advocacia",
+    "Subnicho": "Direito criminal",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Advocacia",
+    "Subnicho": "Direito previdenciario (INSS, aposentadorias, BPC/LOAS)",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Advocacia",
+    "Subnicho": "Direito de familia e sucessoes (divorcio, guarda, pensao)",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Advocacia",
+    "Subnicho": "Direito de familia e sucessoes (inventarios, testamentos)",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Advocacia",
+    "Subnicho": "Direito imobiliario (usucapiao, regularizacao)",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Advocacia",
+    "Subnicho": "Direito imobiliario (contratos, locacao)",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Advocacia",
+    "Subnicho": "Direito do consumidor (voos, bancos, negativacao)",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Advocacia",
+    "Subnicho": "Direito tributario e empresarial",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Advocacia",
+    "Subnicho": "Direito bancario",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Advocacia",
+    "Subnicho": "Direito medico / da saude",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Advocacia",
+    "Subnicho": "Direito digital e LGPD",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Imobiliario",
+    "Subnicho": "Corretores autonomos",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Imobiliario",
+    "Subnicho": "Imobiliarias pequenas e medias",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Imobiliario",
+    "Subnicho": "Lancamentos imobiliarios (incorporadoras)",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Imobiliario",
+    "Subnicho": "Avaliacao de imoveis",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Imobiliario",
+    "Subnicho": "Aluguel e administracao de imoveis",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Imobiliario",
+    "Subnicho": "Imoveis de alto padrao / luxo",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Imobiliario",
+    "Subnicho": "Imoveis na praia / interior (segunda residencia)",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Imobiliario",
+    "Subnicho": "Investimento em imoveis (aluguel, revenda)",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Chaveiro 24h",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Desentupidora",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Dedetizacao / controle de pragas",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Conserto de eletrodomesticos",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Assistencia tecnica de ar-condicionado",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Eletricista",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Encanador / hidraulico",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Vidraceiro",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Serralheiro",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Pedreiro / empreiteiro",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Pintor",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Gesso e drywall",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Piso e revestimento",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Marido de aluguel",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Oficina mecanica",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Funilaria e pintura",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Lava-rapido e estetica automotiva",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Guincho e assistencia 24h",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Limpeza de estofados e tapetes",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Limpeza pos-obra / residencial",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Jardineiro / paisagismo",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Servicos locais emergenciais",
+    "Subnicho": "Piscina (manutencao e reforma)",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Alta",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Educacao e cursos",
+    "Subnicho": "Escolas de educacao infantil / fundamental / medio",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Educacao e cursos",
+    "Subnicho": "Escolas de idiomas (ingles, espanhol, etc.)",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Educacao e cursos",
+    "Subnicho": "Escolas de musica, danca, arte",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Educacao e cursos",
+    "Subnicho": "Cursos profissionalizantes (beleza, gastronomia, etc.)",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Educacao e cursos",
+    "Subnicho": "Cursos de tecnologia e programacao",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Educacao e cursos",
+    "Subnicho": "Cursos administrativos, contabeis, de vendas",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Educacao e cursos",
+    "Subnicho": "Cursos online (emagrecimento, saude, fitness)",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Educacao e cursos",
+    "Subnicho": "Cursos online (marketing digital, trafego, copy)",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Educacao e cursos",
+    "Subnicho": "Cursos online (financas e investimentos)",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Educacao e cursos",
+    "Subnicho": "Cursos online (desenvolvimento pessoal)",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Educacao e cursos",
+    "Subnicho": "Treinamentos corporativos in-company",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Educacao e cursos",
+    "Subnicho": "Mentorias para empreendedores e lideres",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Negocios B2B servicos profissionais",
+    "Subnicho": "Contabilidade e escritorios contabeis",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Negocios B2B servicos profissionais",
+    "Subnicho": "Consultoria de gestao",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Negocios B2B servicos profissionais",
+    "Subnicho": "Consultoria financeira",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Negocios B2B servicos profissionais",
+    "Subnicho": "Consultoria de marketing / vendas",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Negocios B2B servicos profissionais",
+    "Subnicho": "Consultoria de RH / treinamento",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Negocios B2B servicos profissionais",
+    "Subnicho": "Agencias de marketing digital",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Negocios B2B servicos profissionais",
+    "Subnicho": "Design e branding",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Negocios B2B servicos profissionais",
+    "Subnicho": "Desenvolvimento de sites e softwares",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Negocios B2B servicos profissionais",
+    "Subnicho": "Copywriting, video, fotografia corporativa",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Negocios B2B servicos profissionais",
+    "Subnicho": "Software e SaaS (ERP, CRM)",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Negocios B2B servicos profissionais",
+    "Subnicho": "Softwares para nichos (clinicas, escolas, escritorios)",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Negocios B2B servicos profissionais",
+    "Subnicho": "Ferramentas de automacao e IA",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Negocios B2B servicos profissionais",
+    "Subnicho": "Assessoria de investimentos",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Negocios B2B servicos profissionais",
+    "Subnicho": "Corretoras de seguro",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Negocios B2B servicos profissionais",
+    "Subnicho": "Factoring, antecipacao de recebiveis",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Negocios B2B servicos profissionais",
+    "Subnicho": "Servicos de cobranca e recuperacao de credito",
+    "Prioridade": "Alta",
+    "CPC_estimado": "Alto",
+    "Urgencia": "Media",
+    "Ticket_medio": "Alto"
+  },
+  {
+    "Grupo": "Automotivo",
+    "Subnicho": "Concessionarias - Carros novos",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Automotivo",
+    "Subnicho": "Concessionarias - Carros usados / seminovos",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Automotivo",
+    "Subnicho": "Concessionarias - Motos",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Automotivo",
+    "Subnicho": "Oficinas mecanicas gerais",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Automotivo",
+    "Subnicho": "Oficinas especializadas (cambio, motor, freios)",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Automotivo",
+    "Subnicho": "Centro automotivo (revisao, oleo, pneus)",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Automotivo",
+    "Subnicho": "Estetica automotiva (polimento, vitrificacao)",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Automotivo",
+    "Subnicho": "Lava-rapido premium",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Automotivo",
+    "Subnicho": "Lojas de pecas e acessorios",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Automotivo",
+    "Subnicho": "Instalacao de alarmes, rastreadores, cameras",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Automotivo",
+    "Subnicho": "Guincho e assistencia 24h",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Automotivo",
+    "Subnicho": "Leilao de veiculos",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Automotivo",
+    "Subnicho": "Vistoria cautelar",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Beleza e bem estar",
+    "Subnicho": "Saloes de beleza - Cabeleireiro / colorista",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Beleza e bem estar",
+    "Subnicho": "Barbearia",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Beleza e bem estar",
+    "Subnicho": "Manicure e pedicure",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Beleza e bem estar",
+    "Subnicho": "Maquiagem e noivas",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Beleza e bem estar",
+    "Subnicho": "Estudio de sobrancelha e cilios",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Beleza e bem estar",
+    "Subnicho": "Micropigmentacao",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Beleza e bem estar",
+    "Subnicho": "Tatuagem e piercing",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Beleza e bem estar",
+    "Subnicho": "Depilacao (cera, linha, laser em estudios)",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Beleza e bem estar",
+    "Subnicho": "Academias de bairro",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Beleza e bem estar",
+    "Subnicho": "Studios de pilates, yoga, funcional",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Beleza e bem estar",
+    "Subnicho": "Personal trainer e treinos online",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Beleza e bem estar",
+    "Subnicho": "Massagem e spa",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Beleza e bem estar",
+    "Subnicho": "Terapias holisticas (reiki, acupuntura)",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  },
+  {
+    "Grupo": "Beleza e bem estar",
+    "Subnicho": "Nutricao esportiva e emagrecimento",
+    "Prioridade": "Media",
+    "CPC_estimado": "Medio",
+    "Urgencia": "Media",
+    "Ticket_medio": "Medio"
+  }
+]

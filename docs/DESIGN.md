@@ -1,294 +1,300 @@
-# Sistema Visual — `/landingpage`
+# DESIGN.md — Direção visual da Anúncio e Site
 
-## 1. Direção
+**Versão:** 0.2  
+**Data:** 9 de setembro de 2026  
+**Estado:** definição parcial feita com Willian  
+**Responsável pelas decisões:** Willian Souza
 
-**Minimalismo premium, claro e comercial, com bento seletivo e glassmorphism apenas como detalhe.**
+## 1. Função deste documento
 
-O visual deve comunicar:
+Este documento registra somente as decisões visuais confirmadas por Willian para o site da Anúncio e Site.
 
-- clareza;
-- competência;
-- cuidado técnico;
-- modernidade acessível;
-- confiança para contratar um serviço feito por uma pessoa real.
+Qualquer item ainda não escolhido deve permanecer identificado como **PROPOSTA** ou **PENDENTE**. Sugestões de IA, da IDE ou de referências externas não se tornam decisões automaticamente.
 
-Não deve parecer um SaaS, uma ferramenta automática, uma página de criptomoeda ou uma grande agência impessoal.
+O documento deve ser lido junto com:
 
-## 2. Proporção visual
+- PRODUCT.md, para posicionamento e público;
+- docs/OFERTA.md, para serviços e preços;
+- docs/ARQUITETURA.md, para páginas e ordem das seções.
 
-- 70%: superfícies sólidas, espaço em branco e tipografia.
-- 20%: composição bento para organizar entregáveis e benefícios.
-- 10%: gradientes, transparência e elementos decorativos.
+## 2. Objetivo visual confirmado
 
-Essas proporções são diretrizes, não cálculos rígidos.
+O próprio site deverá apresentar a qualidade do trabalho vendido pela Anúncio e Site. Ele não pode transmitir a sensação de que o profissional cria boas páginas para clientes, mas mantém uma página própria simples ou descuidada.
 
-## 3. Tokens de cor
+A aparência deverá:
 
-| Token | Valor inicial | Uso |
-|---|---:|---|
-| `--background` | `#F7F8FA` | Fundo principal |
-| `--surface` | `#FFFFFF` | Cards, formulário e FAQ |
-| `--surface-soft` | `#EFF4FF` | Áreas de apoio |
-| `--text-primary` | `#101828` | Títulos e texto principal |
-| `--text-secondary` | `#475467` | Texto secundário |
-| `--brand` | `#155EEF` | CTA e destaques |
-| `--brand-hover` | `#004EEB` | Hover do CTA |
-| `--brand-soft` | `#D1E0FF` | Detalhes e ícones |
-| `--border` | `#D0D5DD` | Bordas |
-| `--success` | `#067647` | Confirmação |
-| `--error` | `#B42318` | Erros |
-| `--focus` | `#84ADFF` | Anel de foco |
+- valorizar o trabalho antes de apresentar o preço;
+- mostrar cuidado visual e capacidade técnica;
+- ser profissional sem afastar prestadores de serviços e pequenos negócios;
+- ter personalidade própria;
+- evitar aparência genérica de site produzido automaticamente;
+- evitar a estética reconhecível de templates comuns do Lovable e de outros construtores de IA.
 
-As cores podem ser ajustadas para a identidade existente, mas contraste e função devem ser preservados.
+Não foi aprovado o uso das palavras “premium”, “luxo” ou qualquer outro rótulo semelhante no posicionamento.
 
-## 4. Gradientes
+## 3. Decisões confirmadas
 
-Gradiente permitido no hero:
+| Tema | Decisão confirmada |
+|---|---|
+| Base visual | Predominantemente escura |
+| Ritmo | Uso de algumas seções claras entre as áreas escuras |
+| Cor de destaque | Laranja forte |
+| Fonte dos títulos | Archivo |
+| Fonte dos textos | Inter |
+| Marca inicial | Logotipo composto somente pelo nome |
+| Escrita da marca | Anúncio e Site |
+| Hero | Texto forte, fundo trabalhado e botão |
+| Imagem na hero | Não utilizar imagem como elemento principal |
+| Foto de Willian | Utilizar na seção de atendimento pessoal |
+| Cantos | Levemente arredondados ou quase retos |
+| Movimento | Animações discretas |
+| Projetos | Podem subir ou aparecer ao entrar na tela |
+| WhatsApp no celular | Botão compacto e discreto, além dos CTAs das seções |
 
-```css
-background:
-  radial-gradient(circle at 85% 10%, rgba(21, 94, 239, 0.14), transparent 34%),
-  radial-gradient(circle at 70% 40%, rgba(105, 65, 198, 0.08), transparent 30%),
-  #f7f8fa;
-```
+## 4. Cores
 
-Não usar gradiente em todos os cartões ou botões.
+### 4.1 Confirmado
+
+- o fundo principal será escuro;
+- algumas seções serão claras para evitar monotonia e criar ritmo;
+- o laranja será forte e usado como destaque;
+- a leitura deverá ter contraste adequado em fundos escuros e claros.
+
+### 4.2 Proposta de paleta para testar
+
+Os códigos abaixo ainda não foram aprovados. Eles servem somente como ponto de partida para o primeiro protótipo.
+
+| Função | Proposta |
+|---|---:|
+| Fundo escuro | #0B0D0F |
+| Superfície escura | #171A1F |
+| Texto sobre fundo escuro | #F6F3ED |
+| Fundo claro | #F4F0E8 |
+| Texto sobre fundo claro | #17191D |
+| Laranja principal | #FF6A00 |
+
+**PENDENTE:** aprovar ou substituir cada cor depois de visualizar a combinação em uma tela real.
 
 ## 5. Tipografia
 
-Prioridade:
+### 5.1 Confirmado
 
-1. Geist, se já estiver instalada;
-2. Inter, se já estiver instalada;
-3. fonte sans-serif existente e legível.
+- Archivo será usada nos títulos;
+- Inter será usada nos textos, menus, botões e demais informações da interface;
+- os títulos deverão ter presença e ajudar a página a demonstrar qualidade visual;
+- os textos deverão manter leitura confortável em celular e computador.
 
-Não carregar duas famílias apenas por estética.
+### 5.2 Ainda não definido
 
-Escala sugerida:
+- pesos exatos das fontes;
+- tamanhos de cada nível de título;
+- espaçamento entre letras;
+- altura das linhas;
+- largura máxima dos parágrafos;
+- forma exata de carregar ou hospedar as fontes.
 
-| Elemento | Desktop | Mobile |
-|---|---:|---:|
-| Hero `h1` | `56–64px` | `36–42px` |
-| Título de seção | `40–48px` | `30–36px` |
-| Subtítulo | `20–22px` | `18–20px` |
-| Corpo | `17–18px` | `16–18px` |
-| Texto auxiliar | `14–15px` | `14–15px` |
+Esses valores deverão ser propostos no protótipo e aprovados visualmente.
 
-- Títulos: peso 650–750, `line-height` entre 1.05 e 1.15.
-- Corpo: peso 400–500, `line-height` entre 1.5 e 1.7.
-- Comprimento de linha: aproximadamente 55–75 caracteres.
-- Evitar títulos em caixa alta.
+## 6. Logotipo tipográfico
 
-## 6. Layout e espaçamento
+### 6.1 Confirmado
 
-- Container máximo: `1200px`.
-- Respiro lateral: `24px` no desktop e `16–20px` no mobile.
-- Seções: `96–128px` vertical no desktop e `64–80px` no mobile.
-- Base de espaçamento: múltiplos de `4px`, preferencialmente escala 8.
-- Hero: duas colunas no desktop e uma coluna no mobile.
-- O CTA e a proposta devem aparecer antes do visual no mobile.
+- a marca inicial será composta apenas pelo nome “Anúncio e Site”;
+- não haverá símbolo obrigatório nesta primeira definição;
+- a escrita deverá preservar acento, maiúsculas e minúsculas do nome aprovado.
 
-## 7. Bordas, raios e sombras
+### 6.2 Pendente
 
-- Card principal: raio `20–24px`.
-- Card secundário: raio `16–20px`.
-- Botão e campo: raio `10–14px`.
-- Borda: `1px solid var(--border)`.
-- Sombras discretas, por exemplo:
+- fonte e peso usados especificamente no logotipo;
+- uso de uma ou duas cores no nome;
+- espaçamento entre as palavras;
+- tamanho no cabeçalho;
+- versão para fundos claros;
+- favicon;
+- imagem de compartilhamento da marca.
 
-```css
-box-shadow: 0 12px 32px rgba(16, 24, 40, 0.08);
-```
+Nenhum monograma ou símbolo está aprovado neste momento.
 
-Não usar sombras pesadas ou glow neon.
+## 7. Hero da página inicial
 
-## 8. Hero
+### 7.1 Confirmado
 
-O hero deve ter:
+A hero deverá usar:
 
-- etiqueta curta;
-- `h1` única;
-- subheadline;
-- linha de investimento, prazo e ajustes;
-- CTA principal;
-- microcopy de segurança;
-- mockup realista de uma Landing Page em desktop e mobile.
+- texto forte como protagonista;
+- fundo trabalhado;
+- botão de ação;
+- composição que já demonstre a qualidade do trabalho;
+- preço fora do primeiro foco visual, conforme definido em docs/ARQUITETURA.md.
 
-O mockup pode incluir pequenos cartões decorativos de preço, formulário e rastreamento. Eles não devem simular métricas ou resultados inexistentes.
+A hero não deverá usar uma imagem ou montagem de projeto como seu elemento principal.
 
-Não usar:
+### 7.2 Pendente
 
-- foto genérica de escritório;
-- gráfico com números inventados;
-- dashboard falso;
-- animação contínua chamativa;
-- texto dentro de imagem quando possa ser HTML.
+Ainda não foram escolhidos:
 
-## 9. Bento
+- texto definitivo;
+- desenho do fundo;
+- posição exata do conteúdo;
+- quantidade de botões;
+- elementos gráficos;
+- altura da primeira dobra;
+- animação do fundo;
+- comportamento exato no celular.
 
-Usar na seção “O que está incluído”.
+Não estão aprovados, por enquanto, grades, palavras gigantes, manchas de luz, ilustrações, mockups, partículas ou qualquer outro recurso específico de fundo.
 
-Composição recomendada:
+## 8. Ritmo entre seções
 
-- card grande: estratégia e copy;
-- card médio: design responsivo;
-- card médio: desenvolvimento;
-- cards pequenos: formulário, WhatsApp e rastreamento;
-- card horizontal: investimento e escopo.
+### 8.1 Confirmado
 
-Os cards precisam ter hierarquia clara. Nem todos devem usar cor, ícone e tamanho equivalentes.
+A página deverá misturar áreas escuras e claras. As áreas claras existirão para criar mudança de ritmo e destacar partes importantes, não para transformar o site em duas identidades visuais diferentes.
 
-## 10. Glassmorphism
+### 8.2 Pendente
 
-Permitido apenas em:
+Ainda será definido no protótipo quais seções serão claras e quais serão escuras.
 
-- etiqueta do hero;
-- pequenos cartões flutuantes;
-- selo de escopo;
-- detalhes sobre gradiente.
+**PROPOSTA INICIAL:** testar o portfólio em uma seção clara, pois as imagens dos projetos precisam aparecer com destaque. Essa proposta ainda depende de aprovação.
 
-Requisitos:
+## 9. Portfólio e apresentação dos projetos
 
-- fundo previsível;
-- contraste legível;
-- borda visível;
-- alternativa sólida se `backdrop-filter` não estiver disponível.
+### 9.1 Confirmado
 
-Proibido em:
+- o site deverá apresentar trabalhos reais;
+- o portfólio deverá contribuir para gerar valor antes do preço;
+- os projetos poderão aparecer ou subir discretamente conforme entram na área visível;
+- o movimento deverá ajudar a demonstrar acabamento, sem fazer a página parecer simples ou estática demais;
+- serão apresentados pelo menos três estudos de caso, conforme docs/ARQUITETURA.md.
 
-- formulário;
-- campos;
-- FAQ;
-- textos longos;
-- botão principal;
-- política ou termos.
+### 9.2 Pendente
 
-## 11. Botões e links
+- formato das capturas;
+- tamanho e ordem dos projetos;
+- uso ou não de molduras de navegador e celular;
+- comportamento do projeto ao passar o mouse;
+- informações mostradas em cada card;
+- projetos reais que participarão do lançamento;
+- duração e distância exatas das animações.
 
-CTA primário:
+## 10. Foto e atendimento pessoal
 
-- fundo sólido `--brand`;
-- texto branco;
-- altura mínima `48px`, preferencialmente `52–56px`;
-- padding horizontal de `20–28px`;
-- estado hover, focus, active e disabled;
-- rótulo descritivo.
+### 10.1 Confirmado
 
-CTA secundário:
+- uma foto real de Willian será usada na seção de atendimento pessoal;
+- a foto deverá reforçar que o atendimento, o desenvolvimento e o suporte são realizados diretamente por ele;
+- a imagem não será o elemento principal da hero.
 
-- usar somente quando necessário;
-- borda sólida e fundo branco;
-- não competir com o primário.
+### 10.2 Pendente
 
-No mobile, o botão principal pode ocupar toda a largura. O alvo interativo nunca deve ser menor que `44 × 44px`.
+- escolha da foto;
+- enquadramento;
+- roupa;
+- fundo;
+- tratamento de cor;
+- posição dentro da seção;
+- uso adicional ou não na página Sobre.
 
-## 12. Formulário
+## 11. Cantos e componentes
 
-- Superfície sólida branca.
-- Uma coluna.
-- Labels persistentes acima dos campos.
-- Texto de ajuda abaixo quando necessário.
-- Mensagens de erro junto ao campo e resumo acessível quando aplicável.
-- Foco visível.
-- Não usar apenas cor para indicar erro.
-- Botão com estado de carregamento sem alterar bruscamente a largura.
-- Checkbox de consentimento com área clicável adequada.
+### 11.1 Confirmado
 
-## 13. FAQ
+- os cantos serão quase retos ou apenas levemente arredondados;
+- a página deverá evitar componentes excessivamente arredondados;
+- botões, cards e campos precisarão manter a mesma linguagem visual;
+- a interface não deverá parecer um conjunto pronto de componentes de IA.
 
-- Acordeão com superfície sólida.
-- Título da pergunta sempre visível.
-- Ícone simples de expansão.
-- Operável por teclado.
-- Estado aberto exposto a tecnologias assistivas.
-- Sem animação longa.
+### 11.2 Proposta para testar
 
-## 14. Imagens e ícones
+- botões e campos com raio entre 2 px e 5 px;
+- cards com raio máximo aproximado de 6 px;
+- uso de linhas finas para organizar o conteúdo.
 
-- Priorizar imagens reais da página, do processo e de Willian.
-- Usar mockups próprios, não interfaces copiadas de terceiros.
-- Ícones lineares consistentes.
-- SVG ou biblioteca já existente.
-- Toda imagem informativa deve ter `alt`.
-- Imagem decorativa usa `alt=""`.
-- Usar WebP ou AVIF quando apropriado.
+Essas medidas são propostas, não decisões confirmadas.
 
-## 15. Movimento
+## 12. Movimento
 
-Permitido:
+### 12.1 Confirmado
 
-- entrada discreta com opacidade e deslocamento curto;
-- hover de card de até `2–4px`;
-- transições de `150–250ms`;
-- feedback de botão e acordeão.
+- as animações serão discretas;
+- algumas seções poderão surgir suavemente durante a rolagem;
+- projetos poderão subir ou ser revelados ao aparecer;
+- o movimento deverá aumentar a percepção de cuidado e valor;
+- o site não deverá parecer pesado ou exagerado.
 
-Proibido:
+### 12.2 Requisitos mínimos
 
-- parallax pesado;
-- rolagem presa;
-- textos surgindo palavra por palavra;
-- cursor customizado;
-- autoplay com áudio;
-- elementos voando;
-- animação que atrase a ação.
+- nenhuma animação poderá impedir leitura ou clique;
+- o conteúdo deverá continuar acessível sem animações;
+- celulares deverão receber movimentos mais leves quando necessário;
+- a preferência do visitante por movimento reduzido deverá ser respeitada;
+- desempenho não deverá ser sacrificado apenas por efeito visual.
 
-Com `prefers-reduced-motion: reduce`, remover movimento não essencial.
+### 12.3 Pendente
 
-## 16. Responsividade
+- duração;
+- distância do movimento;
+- sequência entre elementos;
+- animação específica da hero;
+- interação dos projetos;
+- biblioteca ou solução técnica utilizada.
 
-Validar pelo menos:
+## 13. WhatsApp no celular
 
-- `320px`;
-- `375px`;
-- `390px`;
-- `768px`;
-- `1024px`;
-- `1280px`;
-- `1440px`.
+### 13.1 Confirmado
 
-Não depender apenas de breakpoints fixos. Evitar:
+- haverá um botão compacto e discreto de WhatsApp no celular;
+- ele será adicional aos CTAs presentes nas seções;
+- não deverá ocupar uma parte grande da tela;
+- não deverá esconder conteúdo ou outros controles.
 
-- overflow horizontal;
-- texto truncado;
-- CTA escondido;
-- cards estreitos demais;
-- mockup maior que a viewport;
-- teclado cobrindo a ação do formulário.
+### 13.2 Pendente
 
-### Comportamento compacto no mobile
+- posição exata;
+- formato;
+- presença de texto ou apenas ícone;
+- momento em que aparece;
+- comportamento quando o menu estiver aberto;
+- mensagem inicial de cada página.
 
-Em viewports abaixo de `768px`, aplicar padrões compactos para reduzir a altura total da página sem remover conteúdo nem alterar o desktop:
+## 14. Critério contra aparência genérica
 
-- **Portfólio**: faixa horizontal com `scroll-snap` (`snap-x snap-mandatory`), cards com `min-w-[85%]`, `scroll-snap-align: start`. Sem autoplay, sem animação. Incluir `<p className="sr-only">Deslize para ver outros projetos</p>` para acessibilidade. No desktop (≥1024px), grid de 6 colunas com 3 projetos na primeira linha (2 colunas cada) e 2 projetos centralizados na segunda linha (colunas 2–3 e 4–5). CTA e microcopy centralizados horizontalmente após o grid. No tablet (768–1023px), grid de 2 colunas.
-- **O que está incluído**: painel compacto com `divide-y` mostrando 6 linhas (título + descrição), visível apenas no mobile. No desktop (≥1024px), grid uniforme de 3 colunas × 2 linhas sem `col-span` especial. No tablet (768–1023px), grid de 2 colunas × 3 linhas.
-- **Quem é Willian Souza**: a partir de `1024px`, composição em duas colunas (texto à esquerda com etiqueta, título e parágrafos; métricas em grid 2×2 à direita, alinhadas pelo topo). Proporção aproximada 55/45. Entre `768px` e `1023px`, apresentação acima e indicadores abaixo em grid 2×2. Abaixo de `768px`, grid `grid-cols-2` (2×2) com tamanhos de fonte reduzidos.
-- **Como funciona**: gaps reduzidos (`space-y-4 md:space-y-8`), número do passo com `w-9 h-9 md:w-10 md:h-10`. No desktop (≥1024px), 4 colunas em uma única linha (`lg:grid-cols-4`). No tablet (768–1023px), grid 2×2. O bloco "Prazo do projeto" permanece abaixo das etapas como faixa informativa separada.
+O critério confirmado é que o resultado não poderá ter aparência típica de página criada automaticamente no Lovable ou em ferramentas semelhantes.
 
-Esses padrões são **somente mobile**. O desktop não pode ser afetado.
+Isso será avaliado no protótipo observando:
 
-## 17. Acessibilidade
+- se a composição parece feita especificamente para a Anúncio e Site;
+- se o portfólio real possui protagonismo;
+- se a tipografia tem hierarquia própria;
+- se os componentes não se repetem mecanicamente;
+- se o uso do laranja é controlado;
+- se os cantos não são excessivamente arredondados;
+- se os movimentos contribuem para a apresentação;
+- se a página demonstra mais qualidade do que uma landing page básica.
 
-- Contraste mínimo compatível com WCAG AA.
-- Uma `h1` e hierarquia de títulos sem saltos arbitrários.
-- Foco visível.
-- Ordem de tabulação lógica.
-- Landmark semântico.
-- Links com finalidade compreensível.
-- Erros anunciados por leitor de tela.
-- Nenhuma informação apenas por cor ou movimento.
+Esta seção não aprova automaticamente nenhum efeito, componente ou tendência específica.
 
-## 18. Elementos proibidos
+## 15. Validação necessária
 
-- fundo escuro dominante;
-- excesso de glassmorphism;
-- neon;
-- gradiente em todos os elementos;
-- carrossel automático;
-- pop-up de saída;
-- cronômetro;
-- barra de urgência falsa;
-- números animados sem dados reais;
-- selos de segurança genéricos;
-- depoimentos fictícios;
-- logos sem autorização;
-- comparação depreciativa com concorrentes.
+Antes de considerar o design aprovado, deverão ser apresentados pelo menos:
+
+1. hero em desktop;
+2. hero em celular;
+3. uma transição entre seção escura e seção clara;
+4. uma proposta de apresentação do portfólio;
+5. uma proposta para a seção com a foto de Willian;
+6. botão principal e botão secundário;
+7. card com cantos discretos;
+8. botão móvel de WhatsApp;
+9. exemplo da animação de entrada de um projeto;
+10. logotipo tipográfico no cabeçalho.
+
+## 16. Pendências para a próxima conversa de design
+
+1. aprovar os códigos exatos das cores;
+2. definir o tratamento visual do nome “Anúncio e Site”;
+3. escolher o estilo do fundo da hero;
+4. escolher quais seções serão claras;
+5. selecionar a foto de Willian;
+6. selecionar os três primeiros projetos;
+7. definir como os projetos serão apresentados;
+8. validar componentes e movimentos em um protótipo real.
