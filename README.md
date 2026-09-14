@@ -1,8 +1,8 @@
 # README.md — Documentação da Anúncio e Site
 
-**Versão:** 1.1  
-**Data:** 11 de setembro de 2026  
-**Estado:** auditoria cruzada concluída; pacote documental pronto para importação, com pendências operacionais registradas  
+**Versão:** 1.2  
+**Data:** 13 de setembro de 2026  
+**Estado:** fundação Astro e deploy inicial concluídos; repositório oficial, GitHub, Vercel e domínio conectados; Fase 4 (primeira versão visual da página inicial) em andamento  
 **Responsável pelas decisões:** Willian Souza
 
 ## 1. Função deste arquivo
@@ -91,7 +91,7 @@ Não é necessário reler todos os arquivos a cada pequena tarefa. É obrigatór
 
 | Caminho | Versão atual | Função principal | Consultar quando |
 |---|---:|---|---|
-| [`README.md`](README.md) | 1.1 | Porta de entrada, estrutura e regras de uso | Ao iniciar o projeto ou orientar uma nova IA |
+| [`README.md`](README.md) | 1.2 | Porta de entrada, estrutura e regras de uso | Ao iniciar o projeto ou orientar uma nova IA |
 | [`PRODUCT.md`](PRODUCT.md) | 0.3 | Visão do produto, posicionamento, público, serviços e objetivos | Ao decidir o que o negócio e o site precisam comunicar |
 | [`docs/DECISOES.md`](docs/DECISOES.md) | 1.1 | Registro consolidado do que está ativo, pendente e substituído | Antes de qualquer decisão, conteúdo ou implementação |
 | [`docs/OFERTA.md`](docs/OFERTA.md) | 0.2 | Preços, entregas, limites, pagamentos e condições comerciais | Ao criar páginas comerciais, propostas ou respostas de venda |
@@ -111,7 +111,7 @@ Materiais auxiliares:
 | [`docs/pesquisa/esqueletos_artigos_nichos.json`](docs/pesquisa/esqueletos_artigos_nichos.json) | Esqueletos recebidos para os mesmos nichos | Não usar como molde de publicação em massa |
 | [`docs/referencias/autocomplete-landing-pages-profissoes.png`](docs/referencias/autocomplete-landing-pages-profissoes.png) | Registro visual de sugestões do autocomplete | Inspira pesquisa; não comprova volume de busca |
 
-As versões acima descrevem o pacote em 11 de setembro de 2026. Quando um documento mudar, atualizar a versão nele e revisar este mapa durante a próxima auditoria geral.
+As versões acima descrevem o pacote em 13 de setembro de 2026. Quando um documento mudar, atualizar a versão nele e revisar este mapa durante a próxima auditoria geral.
 
 ## 6. Regra de autoridade entre os arquivos
 
@@ -208,11 +208,11 @@ Não estão ativos como oferta pública:
 - páginas estáticas e JavaScript mínimo sempre que possível;
 - Keystatic Cloud integrado ao GitHub para artigos e estudos de caso;
 - Markdoc para o conteúdo editorial;
-- repositório privado no GitHub;
-- publicação pela Vercel;
-- domínio canônico `https://www.anuncioesite.com.br`;
+- repositório privado no GitHub: `wscariott1988/Anuncio-e-site-2026` (URL sem acento), conectado à Vercel;
+- publicação pela Vercel, já integrada ao GitHub; `master` é a branch de produção e branches alternativas geram previews;
+- domínio canônico `https://www.anuncioesite.com.br`, registrado na HostGator e apontando para a Vercel;
 - domínio sem `www` redirecionado permanentemente para o canônico, preservando o caminho;
-- `noindex, nofollow` durante a construção no domínio real;
+- `noindex, nofollow` durante a construção no domínio real (modo `construction`);
 - GTM e GA4 instalados depois que o site estiver pronto e antes da medição de produção;
 - WhatsApp habilitado somente após existir um número definitivo e testado.
 
@@ -242,7 +242,6 @@ As pendências completas estão em `docs/DECISOES.md`. As mais importantes neste
 - autorizações para nomes, depoimentos e métricas;
 - validação dos dois hosts do domínio;
 - dados finais de medição, consentimento e privacidade;
-- nome definitivo do repositório;
 - códigos finais da paleta e escala tipográfica.
 
 Uma pendência não impede automaticamente todo o desenvolvimento. Consultar o roadmap para saber em qual fase ela se torna bloqueadora.
@@ -380,12 +379,14 @@ Estar pronta para implementação não significa que todas as pendências comerc
 
 ## 16. Próximo passo
 
-A auditoria cruzada desta base foi concluída em 11 de setembro de 2026. O próximo passo é colocar o pacote documental na raiz do repositório da Anúncio e Site, preservando a estrutura de pastas.
+A documentação foi importada para a raiz do repositório e a fundação técnica (Fase 3) está concluída: o projeto Astro publica uma base protegida no domínio real, com `noindex, nofollow` e modo `construction`. Este repositório é o oficial e está conectado ao GitHub, à Vercel e ao domínio `anuncioesite.com.br`.
 
-Depois da importação:
+Após a importação:
 
 1. revisar e aprovar a ordem do `docs/ROADMAP.md`;
 2. montar o notebook principal com as onze fontes Markdown de `docs/NOTEBOOKLM.md`;
 3. iniciar em paralelo as pendências operacionais da Fase 1 e a coleta de ativos da Fase 2;
-4. começar a fundação técnica da Fase 3 sem retirar o `noindex`;
+4. executar a Fase 4 — primeira versão visual da página inicial — sem retirar o `noindex`;
 5. manter preços, contatos, provas e pendências subordinados a `docs/DECISOES.md`.
+
+A próxima tarefa em andamento é a **Fase 4 do roadmap**: aprovar o protótipo visual da home na branch `feat/home-v1`, com preview na Vercel, mantendo o modo `construction`.

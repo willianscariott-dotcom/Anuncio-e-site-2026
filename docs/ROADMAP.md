@@ -1,8 +1,8 @@
 # ROADMAP.md — Construção, lançamento e evolução
 
-**Versão:** 0.3  
-**Data:** 11 de setembro de 2026  
-**Estado:** base documental auditada; ordem operacional ainda aguarda aprovação final de Willian  
+**Versão:** 0.4  
+**Data:** 13 de setembro de 2026  
+**Estado:** base documental auditada e importada; fundação técnica (Fase 3) concluída; Fase 4 em andamento  
 **Responsável pela execução e aprovação:** Willian Souza
 
 ## 1. Função deste documento
@@ -67,11 +67,11 @@ Uma fase não deve ser marcada como concluída apenas porque seus arquivos foram
 
 | Fase | Estado inicial | Entrega principal | Depende de |
 |---|---|---|---|
-| 0. Fechar a base documental | EM REVISÃO | Documentação auditada para IDE e NotebookLM | Aprovação da ordem e importação no repositório |
+| 0. Fechar a base documental | CONCLUÍDO | Documentação auditada e importada para a raiz do repositório | — |
 | 1. Resolver regras e bloqueios | NÃO INICIADO | Operação pronta para contratar e lançar | Respostas e escolhas de Willian |
 | 2. Reunir provas, ativos e inventário | NÃO INICIADO | Materiais reais e mapa do site anterior | Acesso aos projetos e domínio |
-| 3. Criar a fundação técnica | NÃO INICIADO | Projeto Astro publicando uma base protegida | Repositório e contas técnicas |
-| 4. Aprovar o protótipo visual | NÃO INICIADO | Home responsiva com direção visual aprovada | Fundação técnica |
+| 3. Criar a fundação técnica | CONCLUÍDO | Projeto Astro publicando uma base protegida | Repositório e contas técnicas |
+| 4. Aprovar o protótipo visual | EM ANDAMENTO | Home responsiva com direção visual aprovada | Fundação técnica |
 | 5. Construir componentes e modelos | NÃO INICIADO | Sistema reutilizável de páginas e conteúdo | Protótipo aprovado |
 | 6. Implementar páginas comerciais | NÃO INICIADO | Todas as rotas comerciais funcionando | Componentes e copy aprovada |
 | 7. Inserir portfólio e conteúdo inicial | NÃO INICIADO | 3 casos e 15–20 artigos revisados | Materiais e modelos de conteúdo |
@@ -119,12 +119,12 @@ Entregar uma base que permita ao Antigravity, ao NotebookLM e a qualquer IA ente
 - [x] definir estratégia editorial, SEO e GEO em `CONTEUDO-SEO.md`;
 - [x] definir stack, publicação e requisitos técnicos em `IMPLEMENTACAO.md`;
 - [x] consolidar decisões ativas, substituídas e pendentes em `DECISOES.md`;
-- [ ] aprovar este `ROADMAP.md`;
+- [x] aprovar este `ROADMAP.md` e iniciar a execução das fases;
 - [x] atualizar `FONTES.md` com todas as referências técnicas e editoriais realmente utilizadas;
 - [x] atualizar `NOTEBOOKLM.md` com a ordem definitiva das fontes e exemplos de consultas;
 - [x] atualizar `../README.md` com versões, estado e sequência final;
 - [x] executar uma auditoria cruzada procurando contradições, nomes de outros projetos, valores antigos e pendências resolvidas;
-- [ ] copiar a documentação aprovada para a raiz do projeto que será aberto no Antigravity, comparando antes de substituir arquivos existentes.
+- [x] copiar a documentação aprovada para a raiz do projeto que será aberto no Antigravity, comparando antes de substituir arquivos existentes.
 
 ### Critério de conclusão
 
@@ -238,26 +238,28 @@ Construir um projeto pequeno, reproduzível e publicável antes de iniciar o des
 
 ### Tarefas
 
-- [ ] criar ou reorganizar o repositório privado no GitHub;
-- [ ] usar `anuncioesite` como nome se estiver disponível ou registrar outro nome aprovado;
-- [ ] definir `main` como branch principal;
-- [ ] iniciar Astro com TypeScript;
-- [ ] usar pnpm e registrar sua versão no projeto;
-- [ ] fixar uma versão LTS do Node.js;
-- [ ] criar a estrutura de pastas definida em `IMPLEMENTACAO.md`;
-- [ ] instalar somente dependências justificadas;
-- [ ] configurar CSS próprio, tokens iniciais e fontes;
-- [ ] configurar Keystatic Cloud conectado ao GitHub;
-- [ ] criar coleções iniciais para artigos e estudos de caso;
-- [ ] configurar Vercel e deploy automático;
-- [ ] permitir previews para branches de mudanças maiores;
-- [ ] cadastrar domínio raiz e `www` na hospedagem;
-- [ ] definir `www.anuncioesite.com.br` como canônico;
+- [x] criar ou reorganizar o repositório privado no GitHub;
+- [x] usar `anuncioesite` como nome se estiver disponível ou registrar outro nome aprovado;
+- [x] definir branch principal (atual: `master`; a rebuild `rebuild/astro` foi incorporada a ela);
+- [x] iniciar Astro com TypeScript;
+- [x] usar pnpm e registrar sua versão no projeto;
+- [x] fixar uma versão LTS do Node.js;
+- [x] criar a estrutura de pastas definida em `IMPLEMENTACAO.md`;
+- [x] instalar somente dependências justificadas;
+- [x] configurar CSS próprio, tokens iniciais e fontes;
+- [x] configurar Keystatic Cloud conectado ao GitHub;
+- [x] criar coleções iniciais para artigos e estudos de caso;
+- [x] configurar Vercel e deploy automático;
+- [x] permitir previews para branches de mudanças maiores;
+- [x] cadastrar domínio raiz e `www` na hospedagem;
+- [x] definir `www.anuncioesite.com.br` como canônico;
 - [ ] configurar redirecionamento permanente do domínio raiz para `www`, preservando o caminho;
-- [ ] aplicar `noindex, nofollow` durante toda a construção;
-- [ ] configurar scripts de desenvolvimento, verificação, lint e build;
-- [ ] manter segredos fora do repositório;
-- [ ] confirmar que um build com erro não substitui a última versão estável.
+- [x] aplicar `noindex, nofollow` durante toda a construção;
+- [x] configurar scripts de desenvolvimento, verificação, lint e build;
+- [x] manter segredos fora do repositório;
+- [x] confirmar que um build com erro não substitui a última versão estável.
+
+> **Status (13/09/2026): fase concluída.** O projeto Astro publica uma base protegida a partir da branch principal `master`, com `SITE_STATE` em `construction`, `noindex, nofollow` e `robots.txt` sem restrições. Repositório (privado, `wscariott1988/Anuncio-e-site-2026`), GitHub, Vercel e domínio `anuncioesite.com.br` estão conectados. O canônico `www` está definido no projeto; o redirecionamento do domínio raiz para `www` e a validação final dos hosts permanecem como pendências (Fase 1/8.3 de `IMPLEMENTACAO.md`).
 
 ### Critério de conclusão
 
@@ -310,6 +312,8 @@ Definir a aparência real do projeto em tela antes de replicar componentes por t
 - texto, preço e CTAs permanecem legíveis;
 - animações são discretas e não prejudicam o desempenho;
 - Willian aprova explicitamente a direção antes de ela ser replicada.
+
+> **Status (13/09/2026): em andamento.** A primeira versão visual da home é trabalhada na branch `feat/home-v1`, com preview na Vercel e o projeto permanecendo em modo `construction`. Nesta versão não há links para páginas profissionais (Serviços, Portfólio, Blog, Sobre ainda não existem), e os CTAs de WhatsApp aparecem em estado de demonstração enquanto o número definitivo não for definido (ver `IMPLEMENTACAO.md` 10.1).
 
 ## 11. Fase 5 — Construir componentes e modelos
 

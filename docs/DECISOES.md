@@ -1,8 +1,8 @@
 # DECISOES.md — Registro consolidado do projeto
 
-**Versão:** 1.1  
-**Data:** 11 de setembro de 2026  
-**Estado:** decisões consolidadas; pendências ativas identificadas  
+**Versão:** 1.2  
+**Data:** 13 de setembro de 2026  
+**Estado:** decisões consolidadas; fundação Astro e deploy inicial concluídos; pendências ativas identificadas  
 **Responsável pelas decisões:** Willian Souza
 
 ## 1. Função deste documento
@@ -172,8 +172,8 @@ Este é um índice de decisões. Os detalhes de execução permanecem nos docume
 | TEC-001 | CONFIRMADO | A stack aprovada é **Astro + TypeScript + CSS personalizado**, sem WordPress ou Elementor como base do projeto. |
 | TEC-002 | CONFIRMADO | As páginas serão pré-renderizadas e estáticas sempre que possível. JavaScript será mínimo; conteúdo essencial precisa existir no HTML. React ficará restrito ao painel ou a componentes isolados que realmente precisem dele. |
 | TEC-003 | CONFIRMADO | Artigos e estudos de caso serão editáveis com **Keystatic Cloud integrado ao GitHub**, usando Markdoc nos corpos de conteúdo. |
-| TEC-004 | CONFIRMADO | O repositório no GitHub será privado. Torná-lo público não oferece benefício necessário para SEO, deploy ou funcionamento do painel. |
-| TEC-005 | CONFIRMADO | A publicação usará GitHub e Vercel, com deploy automático da branch principal e previews para alterações maiores. |
+| TEC-004 | CONFIRMADO | O repositório no GitHub será privado. Ele já está conectado como `wscariott1988/Anuncio-e-site-2026` (URL sem acento). Torná-lo público não oferece benefício necessário para SEO, deploy ou funcionamento do painel. |
+| TEC-005 | CONFIRMADO | A publicação usa GitHub e Vercel, já conectados: deploy automático da branch principal (`master`) e previews para alterações maiores, como a branch `feat/home-v1`. |
 | TEC-006 | CONFIRMADO | O domínio foi comprado na HostGator e o DNS aponta para a Vercel. O endereço canônico aprovado é `https://www.anuncioesite.com.br`; o domínio sem `www` deverá redirecionar permanentemente, preservando o caminho. |
 | TEC-007 | CONFIRMADO | Durante a construção no domínio real, o site ficará com `noindex, nofollow`. Rascunhos não serão indexados. A proteção só será removida depois da aprovação de lançamento. |
 | TEC-008 | CONFIRMADO | O plano Vercel Hobby poderá ser usado temporariamente durante a construção. Ele não está aprovado como hospedagem comercial definitiva; antes do lançamento será necessário escolher um plano compatível ou outra hospedagem. |
@@ -181,6 +181,8 @@ Este é um índice de decisões. Os detalhes de execução permanecem nos docume
 | TEC-010 | CONFIRMADO | O lançamento não terá formulário próprio nem banco de leads. O número de WhatsApp não será inventado e nenhum botão quebrado será publicado. O e-mail disponível é `contrato@grupows.com`. |
 | TEC-011 | CONFIRMADO | Willian fará a manutenção do site. O projeto deverá incluir documentação de operação, validações automáticas e processo de publicação seguro. |
 | TEC-012 | CONFIRMADO | Os dois JSONs de nichos permanecerão em `docs/pesquisa/` e a captura de autocomplete em `docs/referencias/`. São materiais auxiliares, não fonte de verdade, calendário editorial nem autorização para publicação em massa. |
+| TEC-013 | CONFIRMADO | A fundação Astro e o deploy inicial foram concluídos e integrados à branch principal: o site público é o Astro (a rebuild `rebuild/astro` foi incorporada à `master`), a Vercel publica automaticamente e o domínio real está conectado. Durante toda a construção o projeto permanece em modo `construction` com `noindex, nofollow`, sem alteração de `SITE_STATE`. |
+| TEC-014 | CONFIRMADO | A primeira versão visual da página inicial é trabalhada na branch `feat/home-v1`, mantendo o projeto em modo `construction`. Nenhuma página ou recurso desta etapa será promovido a produção. |
 
 ## 9. Decisões substituídas — não usar
 
@@ -226,7 +228,6 @@ Este é um índice de decisões. Os detalhes de execução permanecem nos docume
 
 | ID | Estado | Pendência | Tratamento atual |
 |---|---|---|---|
-| PEN-TEC-001 | PENDENTE | Nome definitivo do repositório. | Usar `anuncioesite` se estiver disponível; definir ao criar ou reorganizar o repositório. |
 | PEN-VIS-001 | PENDENTE | Códigos exatos da paleta. | Testar a proposta do `DESIGN.md` na tela real antes de aprovar. |
 | PEN-VIS-002 | PENDENTE | Pesos, tamanhos, alturas de linha e espaçamentos tipográficos. | Definir no primeiro protótipo responsivo. |
 | PEN-VIS-003 | PENDENTE | Tratamento exato da hero, marca tipográfica, cartões de projeto e animações. | Criar uma direção visual e aprovar pela aparência, desempenho e ausência de “cara de template”. |
@@ -235,6 +236,8 @@ Este é um índice de decisões. Os detalhes de execução permanecem nos docume
 | PEN-CON-002 | PENDENTE | Nota pública sobre auxílio de IA nos artigos. | Decidir se haverá divulgação padronizada após avaliar transparência e experiência do leitor. |
 | PEN-CON-003 | PENDENTE | Política para GPTBot. | Decidir separadamente se o rastreador de treinamento será permitido; isso não altera a decisão sobre OAI-SearchBot. |
 | PEN-NEG-001 | PENDENTE | Horário comercial exato. | Definir dias e faixas de atendimento antes de publicar horários específicos. |
+
+> **Resolvido em 13/09/2026:** o nome definitivo do repositório deixou de ser pendência. O repositório oficial existe e está conectado como `wscariott1988/Anuncio-e-site-2026`. Uma renomeação futura só ocorrerá por decisão registrada (ver `TEC-004` e `TEC-013`).
 
 ## 11. Decisões que não precisam ser tomadas agora
 

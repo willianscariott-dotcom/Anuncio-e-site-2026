@@ -1,8 +1,8 @@
 # NOTEBOOKLM.md — Base de conhecimento do projeto
 
-**Versão:** 1.1  
-**Data:** 11 de setembro de 2026  
-**Estado:** manifesto definitivo auditado; notebook ainda precisa ser montado por Willian  
+**Versão:** 1.2  
+**Data:** 13 de setembro de 2026  
+**Estado:** manifesto definitivo auditado; fundação Astro e deploy inicial concluídos; notebook ainda precisa ser montado por Willian  
 **Responsável pela base e pelas decisões:** Willian Souza
 
 ## 1. Função deste documento
