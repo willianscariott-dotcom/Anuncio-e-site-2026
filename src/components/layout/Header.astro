@@ -3,9 +3,18 @@ import { SITE } from '../../config/site';
 ---
 
 <header class="header">
-  <div class="header__inner">
-    <a class="header__brand" href="/">
+  <div class="container header__inner">
+    <a class="brand" href="/" aria-label={`${SITE.brand} — página inicial`}>
+      <span class="brand__mark" aria-hidden="true"></span>
       {SITE.brand}
+    </a>
+    <nav class="header__nav" aria-label="Navegação principal">
+      <a href="#trabalhos">Portfólio</a>
+      <a href="#oferta">Oferta</a>
+      <a href="#atendimento">Atendimento</a>
+    </nav>
+    <a class="btn btn--primary btn--small" href={`mailto:${SITE.email}`}>
+      Falar com Willian
     </a>
   </div>
 </header>

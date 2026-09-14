@@ -1,12 +1,20 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/home/Hero.astro';
+import Portfolio from '../components/home/Portfolio.astro';
+import Offer from '../components/home/Offer.astro';
+import Personal from '../components/home/Personal.astro';
+import { SITE } from '../config/site';
 
 export const prerender = true;
 ---
 
-<BaseLayout title="Em construção">
-  <section>
-    <h1>Anúncio e Site</h1>
-    <p>Site em construção. O conteúdo será publicado após a aprovação do projeto.</p>
-  </section>
+<BaseLayout
+  title="Landing pages rápidas e anúncios para pequenos negócios"
+  description={SITE.tagline}
+>
+  <Hero />
+  <Portfolio />
+  <Offer />
+  <Personal />
 </BaseLayout>

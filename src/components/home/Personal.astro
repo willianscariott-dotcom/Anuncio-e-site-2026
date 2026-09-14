@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets';
+import willianPhoto from '../../assets/images/willian-scariott-atendimento.webp';
+---
+
+<section class="section section--light" id="atendimento" aria-labelledby="atendimento-title">
+  <div class="container personal__grid">
+    <figure class="personal__photo" data-reveal>
+      <Image
+        src={willianPhoto}
+        alt="Willian Scariott, criador de sites e gestor de tráfego"
+        widths={[420, 640, 880]}
+        sizes="(max-width: 900px) 100vw, 38vw"
+        loading="lazy"
+      />
+    </figure>
+    <div class="personal__body">
+      <p class="eyebrow">Atendimento pessoal</p>
+      <h2 id="atendimento-title">Você não cai em uma central. Fala comigo.</h2>
+      <p data-reveal>
+        Eu mesmo entendo o projeto, construo a página e acompanho o suporte. Não há troca de
+        atendente, repasse entre setores ou respostas por protocolo.
+      </p>
+      <p class="personal__sign">Willian Scariott — Novo Hamburgo · Vale dos Sinos</p>
+    </div>
+  </div>
+</section>

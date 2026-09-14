@@ -1,8 +1,8 @@
 # DECISOES.md — Registro consolidado do projeto
 
-**Versão:** 1.2  
-**Data:** 13 de setembro de 2026  
-**Estado:** decisões consolidadas; fundação Astro e deploy inicial concluídos; pendências ativas identificadas  
+**Versão:** 1.3
+**Data:** 14 de setembro de 2026
+**Estado:** decisões consolidadas; fundação Astro e deploy inicial concluídos; home v1 rejeitada; home v2 em construção na branch `feat/home-v2`; pendências ativas identificadas
 **Responsável pelas decisões:** Willian Souza
 
 ## 1. Função deste documento
@@ -183,6 +183,7 @@ Este é um índice de decisões. Os detalhes de execução permanecem nos docume
 | TEC-012 | CONFIRMADO | Os dois JSONs de nichos permanecerão em `docs/pesquisa/` e a captura de autocomplete em `docs/referencias/`. São materiais auxiliares, não fonte de verdade, calendário editorial nem autorização para publicação em massa. |
 | TEC-013 | CONFIRMADO | A fundação Astro e o deploy inicial foram concluídos e integrados à branch principal: o site público é o Astro (a rebuild `rebuild/astro` foi incorporada à `master`), a Vercel publica automaticamente e o domínio real está conectado. Durante toda a construção o projeto permanece em modo `construction` com `noindex, nofollow`, sem alteração de `SITE_STATE`. |
 | TEC-014 | CONFIRMADO | A primeira versão visual da página inicial é trabalhada na branch `feat/home-v1`, mantendo o projeto em modo `construction`. Nenhuma página ou recurso desta etapa será promovido a produção. |
+| TEC-015 | CONFIRMADO | A home v1 (`feat/home-v1`, commit visual `2d29d3d`) foi **rejeitada visualmente em 14/09/2026** e não será promovida a produção. A branch é preservada como histórico. O novo recorte visual é construído na branch `feat/home-v2` a partir da `master`, com cherry-pick apenas do commit `e9761cf` (docs). Motivos da rejeição: aparência genérica de site feito por IA, excesso de cards, cantos arredondados, vazios causados por animações (conteúdo iniciando com `opacity: 0` dependente de JS) e textos internos/placeholder expostos. Ver `SUB-013`. |
 
 ## 9. Decisões substituídas — não usar
 
@@ -200,6 +201,7 @@ Este é um índice de decisões. Os detalhes de execução permanecem nos docume
 | SUB-010 | SUBSTITUÍDO | Repositório público como escolha inicial. | Repositório privado. |
 | SUB-011 | SUBSTITUÍDO | Domínio canônico ainda sem escolha entre raiz e `www`. | `https://www.anuncioesite.com.br` é canônico; raiz redireciona para `www`. |
 | SUB-012 | SUBSTITUÍDO | WordPress/Elementor como base provável para blog e edição. | Astro com Keystatic Cloud e conteúdo versionado no GitHub. |
+| SUB-013 | SUBSTITUÍDO | Home v1 (`feat/home-v1`, `2d29d3d`) como base visual da página inicial. | Recorte editorial da home v2 (`feat/home-v2`): fundo escuro no hero com grade técnica discreta, alternância posterior claro/escuro, Archivo/Inter, laranja só em CTAs/linhas/destaques, grid assimétrico, cantos retos ou máx. 2px, sem sombras/cards arredondados/pílulas/ícones genéricos/gradientes/blobs/glows, botões retangulares compactos, conteúdo visível por padrão com animações progressivas pequenas e `prefers-reduced-motion` respeitado. Motivo: v1 reprovada por aparência genérica de IA, excesso de cards, cantos arredondados, vazios de animação e textos internos expostos. |
 
 ## 10. Pendências ativas
 
