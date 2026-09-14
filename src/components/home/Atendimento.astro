@@ -1,0 +1,52 @@
+---
+const pontos = [
+  {
+    titulo: 'Atendimento direto',
+    texto: 'Willian realiza o atendimento pessoalmente, sem repasse entre atendentes.',
+  },
+  {
+    titulo: 'Entendimento do negócio',
+    texto: 'Antes de propor qualquer solução, ele entende como o seu negócio funciona.',
+  },
+  {
+    titulo: 'Quem conversa, desenvolve',
+    texto: 'O mesmo profissional desenvolve o projeto, acompanha a entrega e presta o suporte.',
+  },
+  {
+    titulo: 'Acompanhamento contínuo',
+    texto: 'Depois da publicação, o canal continua aberto para ajustes e dúvidas.',
+  },
+];
+---
+
+<section class="section section--dark">
+  <div class="container">
+    <div class="people-grid">
+      <div data-reveal>
+        <div class="people-photo">
+          Foto real de Willian — será incluída na fase de provas e portfólio.
+        </div>
+      </div>
+      <div data-reveal>
+        <p class="eyebrow">Atendimento pessoal</p>
+        <h2 class="section__title">Atendimento direto com Willian</h2>
+        <p class="section__lead">
+          O seu contato é direto com quem faz o trabalho — do primeiro alinhamento ao suporte.
+        </p>
+        <ul class="check-list">
+          {pontos.map((ponto) => (
+            <li>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+              </svg>
+              <div>
+                <strong>{ponto.titulo}</strong>
+                <span>{ponto.texto}</span>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,72 @@
+---
+import WhatsAppCta from '../ui/WhatsAppCta.astro';
+
+const servicos = [
+  {
+    tag: 'Landing page',
+    titulo: 'Landing page',
+    preco: 'a partir de R$ 399',
+    detalhe: 'R$ 19,90 por mês a partir do segundo mês',
+    descricao:
+      'Uma página de até 5 seções, adaptada para celular, com botões de WhatsApp, formulário de contato e ajuda na redação dos textos. Estrutura orientada à conversão, com o primeiro mês de hospedagem incluso.',
+    rodape: 'Domínio não incluso no valor.',
+  },
+  {
+    tag: 'Sites',
+    titulo: 'Sites',
+    preco: 'sob orçamento',
+    detalhe: 'proposta por projeto',
+    descricao:
+      'Site institucional ou site com blog e área de publicação, desenhados conforme a estrutura, os materiais e os objetivos do seu negócio.',
+    rodape: 'O valor considera páginas, funcionalidades e suporte.',
+  },
+  {
+    tag: 'Anúncios',
+    titulo: 'Google Ads',
+    preco: 'a partir de R$ 390',
+    detalhe: 'por mês, para prestadores de serviços',
+    descricao:
+      'Gestão com campanha de pesquisa, palavras-chave, anúncios, configuração de conversões, otimizações, relatório mensal e atendimento direto.',
+    rodape: 'Investimento pago ao Google não incluso na gestão.',
+  },
+  {
+    tag: 'Anúncios',
+    titulo: 'Meta Ads',
+    preco: 'sob análise',
+    detalhe: 'proposta personalizada',
+    descricao:
+      'Campanhas no Facebook e no Instagram com proposta sob medida, incluindo a análise da sua página de destino e dos materiais disponíveis.',
+    rodape: 'Sem preço fixo nesta primeira versão.',
+  },
+];
+---
+
+<section class="section section--light">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <p class="eyebrow">Serviços e condições iniciais</p>
+      <h2 class="section__title">Soluções diretas, preços públicos</h2>
+      <p class="section__lead">
+        Cada serviço começa por uma conversa sobre o seu negócio. Os valores abaixo são o ponto de
+        partida — o escopo e os detalhes saem do que você precisa.
+      </p>
+    </div>
+    <div class="service-grid">
+      {servicos.map((servico) => (
+        <article class="service-card" data-reveal>
+          <span class="service-card__tag">{servico.tag}</span>
+          <h3>{servico.titulo}</h3>
+          <p class="service-card__desc">{servico.descricao}</p>
+          <div class="service-card__price">
+            <strong>{servico.preco}</strong>
+            <span>{servico.detalhe}</span>
+            <span>{servico.rodape}</span>
+          </div>
+        </article>
+      ))}
+    </div>
+    <div class="section__actions" data-reveal>
+      <WhatsAppCta label="Falar sobre o seu projeto" />
+    </div>
+  </div>
+</section>

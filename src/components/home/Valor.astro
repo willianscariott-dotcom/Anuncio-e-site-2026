@@ -1,0 +1,62 @@
+---
+const itens = [
+  {
+    titulo: 'Organiza a apresentação do seu negócio',
+    texto:
+      'Uma página clara coloca o que você faz, para quem atende e por que escolher você em ordem.',
+  },
+  {
+    titulo: 'Mostra serviços e diferenciais',
+    texto:
+      'Seus principais serviços e pontos fortes ficam visíveis sem depender de longas explicações.',
+  },
+  {
+    titulo: 'Reúne avaliações e trabalhos reais',
+    texto: 'Depoimentos autorizados e exemplos de trabalhos aproximam a decisão do cliente.',
+  },
+  {
+    titulo: 'Facilita o pedido de orçamento pelo WhatsApp',
+    texto:
+      'O caminho para iniciar a conversa está claro, e o cliente chega mais pronto para contratar.',
+  },
+  {
+    titulo: 'Serve de destino para campanhas de anúncios',
+    texto:
+      'Com uma página adequada, o investimento em anúncios não desperdiça cliques em conteúdo fraco.',
+  },
+  {
+    titulo: 'Constrói confiança antes do primeiro contato',
+    texto: 'Quem pesquisa primeiro por fora chega à conversa mais seguro sobre o que você oferece.',
+  },
+];
+---
+
+<section class="section section--dark">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <p class="eyebrow">Valor</p>
+      <h2 class="section__title">O que uma boa página muda na prática</h2>
+      <p class="section__lead">
+        Uma página bem construída transforma a forma como potenciais clientes enxergam o seu
+        trabalho — antes mesmo do primeiro contato.
+      </p>
+    </div>
+    <div class="value-grid">
+      {itens.map((item) => (
+        <div class="value-item" data-reveal>
+          <svg class="value-item__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+          </svg>
+          <div>
+            <h3>{item.titulo}</h3>
+            <p>{item.texto}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+    <p class="section__footnote section__footnote--dark" data-reveal>
+      Uma boa página não substitui o seu atendimento — ela faz os contatos chegarem mais
+      qualificados.
+    </p>
+  </div>
+</section>

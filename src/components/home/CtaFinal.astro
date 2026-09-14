@@ -1,0 +1,26 @@
+---
+import { SITE } from '../../config/site';
+import WhatsAppCta from '../ui/WhatsAppCta.astro';
+---
+
+<section class="section section--dark">
+  <div class="container">
+    <div class="cta" data-reveal>
+      <p class="eyebrow">Próximo passo</p>
+      <h2 class="section__title">
+        Vamos conversar sobre o <span class="text-accent">seu</span> projeto?
+      </h2>
+      <p class="section__lead">
+        Conte para onde o seu negócio quer ir. O Willian responde pessoalmente, e a conversa começa
+        simples, sem compromisso.
+      </p>
+      <div class="cta__actions">
+        <WhatsAppCta label="Falar diretamente com Willian" />
+      </div>
+      <p class="cta__note">
+        O canal de WhatsApp será ativado assim que o número definitivo estiver cadastrado. Até lá,
+        escreva para {SITE.email}.
+      </p>
+    </div>
+  </div>
+</section>

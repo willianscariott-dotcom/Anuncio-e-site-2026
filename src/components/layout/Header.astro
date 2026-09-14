@@ -1,11 +1,15 @@
 ---
 import { SITE } from '../../config/site';
+import WhatsAppCta from '../ui/WhatsAppCta.astro';
 ---
 
 <header class="header">
-  <div class="header__inner">
-    <a class="header__brand" href="/">
+  <div class="container header__inner">
+    <a class="brand" href="/" aria-label={`${SITE.brand} — página inicial`}>
       {SITE.brand}
     </a>
+    <div class="header__cta">
+      <WhatsAppCta label="Falar com Willian" />
+    </div>
   </div>
 </header>

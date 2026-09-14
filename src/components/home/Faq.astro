@@ -1,0 +1,66 @@
+---
+import WhatsAppCta from '../ui/WhatsAppCta.astro';
+
+const perguntas = [
+  {
+    pergunta: 'Quanto custa uma landing page?',
+    resposta:
+      'A criação parte de R$ 399 e inclui uma página de até 5 seções, adaptada para celular, com botões de WhatsApp, formulário, ajuda nos textos e estrutura orientada à conversão. O primeiro mês de hospedagem está incluso; a partir do segundo mês, a continuidade custa R$ 19,90 por mês. O domínio não está incluso.',
+  },
+  {
+    pergunta: 'O que está incluso na oferta básica?',
+    resposta:
+      'Uma página em endereço único, até 5 seções, adaptação para celulares e computadores, cabeçalho e rodapé, botões de WhatsApp, formulário de contato, ajuda na organização dos textos, publicação com certificado HTTPS e duas rodadas de alterações antes da aprovação final.',
+  },
+  {
+    pergunta: 'Quando começa a mensalidade?',
+    resposta:
+      'A primeira mensalidade de R$ 19,90 vence 30 dias após a publicação da página. As seguintes são cobradas a cada novo período de 30 dias, e a página permanece online enquanto a mensalidade estiver em dia.',
+  },
+  {
+    pergunta: 'O domínio está incluso?',
+    resposta:
+      'Não. O domínio não faz parte de R$ 399 nem da mensalidade. Quando for necessário um domínio novo, a recomendação é registrá-lo em nome do próprio cliente.',
+  },
+  {
+    pergunta: 'Qual é o prazo de entrega?',
+    resposta:
+      'O prazo normal é de 7 a 10 dias, contado após a confirmação do pagamento, o recebimento das informações e dos materiais e o alinhamento do objetivo da página.',
+  },
+  {
+    pergunta: 'Vocês também fazem sites com blog?',
+    resposta:
+      'Sim. Sites institucionais e sites com área administrativa de publicação são projetos sob orçamento, definidos conforme a estrutura, a tecnologia e as necessidades do negócio.',
+  },
+  {
+    pergunta: 'A verba dos anúncios está incluída na gestão de Google Ads?',
+    resposta:
+      'Não. O valor da gestão (a partir de R$ 390 por mês) remunera o trabalho de gestão. O investimento pago ao Google é pago diretamente pelo cliente à plataforma.',
+  },
+  {
+    pergunta: 'O atendimento é com quem faz o projeto?',
+    resposta:
+      'Sim. Willian realiza o atendimento, entende a necessidade, desenvolve o projeto, acompanha a entrega e presta o suporte — sem transferência entre departamentos.',
+  },
+];
+---
+
+<section class="section section--light">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <p class="eyebrow">Dúvidas comuns</p>
+      <h2 class="section__title">Perguntas frequentes</h2>
+    </div>
+    <div class="faq" data-reveal>
+      {perguntas.map((item) => (
+        <details>
+          <summary>{item.pergunta}</summary>
+          <p>{item.resposta}</p>
+        </details>
+      ))}
+    </div>
+    <div class="section__actions" data-reveal>
+      <WhatsAppCta label="Tirar dúvida com o Willian" />
+    </div>
+  </div>
+</section>

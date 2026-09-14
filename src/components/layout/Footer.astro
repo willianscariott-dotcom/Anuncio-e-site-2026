@@ -3,6 +3,41 @@ import { SITE } from '../../config/site';
 ---
 
 <footer class="footer">
-  <p>{SITE.brand}</p>
-  <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="/">
+          {SITE.brand}
+        </a>
+        <p style="margin-top: var(--space-4); max-width: 34ch;">
+          Sites, landing pages e gestão de anúncios online para prestadores de serviços e pequenos
+          negócios. Atendimento direto com {SITE.author.display}.
+        </p>
+      </div>
+      <div>
+        <h2>Contato</h2>
+        <ul class="footer__list">
+          <li>
+            <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+          </li>
+          <li>WhatsApp: ativação em breve</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Atendimento</h2>
+        <ul class="footer__list">
+          <li>
+            Base: {SITE.city} — {SITE.state}
+          </li>
+          <li>Atendimento remoto para todo o {SITE.country}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>
+        &copy; {new Date().getFullYear()} {SITE.brand}
+      </span>
+      <span>Site em construção — prévia não indexada por mecanismos de busca.</span>
+    </div>
+  </div>
 </footer>

@@ -18,9 +18,11 @@ const { Content } = await render(caso);
 ---
 
 <BaseLayout title={caso.data.titulo} description={caso.data.resumo}>
-  <article>
-    <h1>{caso.data.titulo}</h1>
-    <p>{caso.data.resumo}</p>
-    <Content />
-  </article>
+  <div class="page-container">
+    <article>
+      <h1>{caso.data.titulo}</h1>
+      <p>{caso.data.resumo}</p>
+      <Content />
+    </article>
+  </div>
 </BaseLayout>

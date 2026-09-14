@@ -1,12 +1,35 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/home/Hero.astro';
+import Projetos from '../components/home/Projetos.astro';
+import Valor from '../components/home/Valor.astro';
+import Servicos from '../components/home/Servicos.astro';
+import Atendimento from '../components/home/Atendimento.astro';
+import Processo from '../components/home/Processo.astro';
+import Regional from '../components/home/Regional.astro';
+import Faq from '../components/home/Faq.astro';
+import CtaFinal from '../components/home/CtaFinal.astro';
+import WhatsAppFloat from '../components/ui/WhatsAppFloat.astro';
+import { SITE } from '../config/site';
 
 export const prerender = true;
 ---
 
-<BaseLayout title="Em construção">
-  <section>
-    <h1>Anúncio e Site</h1>
-    <p>Site em construção. O conteúdo será publicado após a aprovação do projeto.</p>
-  </section>
+<BaseLayout
+  title="Sites, landing pages e anúncios para prestadores de serviços"
+  description={SITE.tagline}
+>
+  <Hero />
+  <Projetos />
+  <Valor />
+  <Servicos />
+  <Atendimento />
+  <Processo />
+  <Regional />
+  <Faq />
+  <CtaFinal />
+  <WhatsAppFloat />
+  <script>
+    import '../scripts/reveal.ts';
+  </script>
 </BaseLayout>

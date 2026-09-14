@@ -1,0 +1,43 @@
+---
+const passos = [
+  {
+    titulo: 'Conversa e entendimento',
+    texto: 'Você conta como o negócio funciona, quem atende e o que deseja alcançar.',
+  },
+  {
+    titulo: 'Estrutura e materiais',
+    texto: 'Definimos objetivo, seções, textos, fotos e informações a reunir.',
+  },
+  {
+    titulo: 'Desenvolvimento',
+    texto: 'A página é construída com foco em clareza, desempenho e conversão.',
+  },
+  {
+    titulo: 'Revisão e ajustes',
+    texto: 'Você acompanha o resultado e aprova com ajustes organizados.',
+  },
+  {
+    titulo: 'Publicação e suporte',
+    texto: 'A página entra no ar e o acompanhamento continua.',
+  },
+];
+---
+
+<section class="section section--light">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <p class="eyebrow">Como funciona</p>
+      <h2 class="section__title">Um processo simples, do primeiro contato à publicação</h2>
+    </div>
+    <div class="steps-grid">
+      {passos.map((passo, index) => (
+        <article class="step" data-reveal>
+          <span class="step__num">{String(index + 1).padStart(2, '0')}</span>
+          <h3>{passo.titulo}</h3>
+          <p>{passo.texto}</p>
+        </article>
+      ))}
+    </div>
+    <p class="section__footnote">Os detalhes podem variar conforme o serviço contratado.</p>
+  </div>
+</section>

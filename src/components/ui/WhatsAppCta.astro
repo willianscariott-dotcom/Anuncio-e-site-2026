@@ -1,0 +1,36 @@
+---
+import { SITE } from '../../config/site';
+import WhatsAppIcon from './WhatsAppIcon.astro';
+
+interface Props {
+  label?: string;
+  variant?: 'primary' | 'secondary';
+}
+
+const { label = 'Falar com Willian', variant = 'primary' } = Astro.props;
+
+const whatsappActive = SITE.whatsapp.length > 0;
+---
+
+{whatsappActive ? (
+  <a
+    class={`btn btn--${variant}`}
+    href={`https://wa.me/${SITE.whatsapp}`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <WhatsAppIcon />
+    <span>{label}</span>
+  </a>
+) : (
+  <button
+    type="button"
+    class={`btn btn--${variant}`}
+    data-whatsapp-demo=""
+    aria-disabled="true"
+    title="O número de WhatsApp será ativado em breve."
+  >
+    <WhatsAppIcon />
+    <span>{label}</span>
+  </button>
+)}
