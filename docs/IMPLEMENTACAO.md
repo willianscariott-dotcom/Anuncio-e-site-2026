@@ -1,8 +1,8 @@
 # IMPLEMENTACAO.md — Arquitetura técnica, publicação e verificação
 
-**Versão:** 0.3  
-**Data:** 11 de setembro de 2026  
-**Estado:** stack técnica aprovada; nome do repositório, WhatsApp e hospedagem comercial definitiva ainda pendentes  
+**Versão:** 0.4  
+**Data:** 13 de setembro de 2026  
+**Estado:** fundação Astro e deploy inicial concluídos; repositório, GitHub, Vercel e domínio conectados; hospedagem comercial definitiva e WhatsApp ainda pendentes  
 **Responsável:** Willian Souza
 
 ## 1. Função deste documento
@@ -58,7 +58,7 @@ Quando houver conflito entre documentos, a implementação deverá parar naquele
 | Manutenção | Realizada pelo próprio Willian |
 | Stack aprovada | Astro, TypeScript e CSS próprio |
 | Painel aprovado | Keystatic Cloud integrado ao GitHub |
-| Visibilidade do repositório | Privado; não existe vantagem técnica em torná-lo público |
+| Visibilidade do repositório | Privado; o repositório oficial é `wscariott1988/Anuncio-e-site-2026` (URL sem acento), já conectado à Vercel |
 | Plano atual da Vercel | Hobby, mantido temporariamente durante a construção |
 | Endereço canônico escolhido | `https://www.anuncioesite.com.br` |
 | WhatsApp | Poderá ser definido depois, mas será obrigatório antes do lançamento comercial |
@@ -79,7 +79,7 @@ Willian aprovou expressamente esta stack em 11 de setembro de 2026.
 | Formato editorial | Markdoc para o corpo do conteúdo e metadados estruturados no próprio repositório |
 | Coleções | Artigos e estudos de caso |
 | Imagens editoriais iniciais | Arquivos no repositório, otimizados durante a construção |
-| Controle de versão | GitHub |
+| Controle de versão | GitHub (`wscariott1988/Anuncio-e-site-2026`, privado) |
 | Hospedagem durante a construção | Vercel Hobby, como situação temporária |
 | Hospedagem para o lançamento comercial | Vercel em plano compatível ou alternativa ainda a decidir |
 | Gerenciador de pacotes | pnpm, com versão registrada em `package.json` |
@@ -285,21 +285,21 @@ Requisitos:
 
 O repositório será **privado**. Torná-lo público não melhora SEO, desempenho, publicação na Vercel ou funcionamento do Keystatic. Um repositório privado reduz exposição desnecessária do código, da estrutura interna e de materiais ainda em preparação. A integração do GitHub deverá conceder acesso somente às aplicações necessárias.
 
-**PENDENTE:** definir o nome ao criar ou reorganizar o repositório. Isso não precisa ser resolvido durante a documentação. Se estiver disponível, o nome recomendado é `anuncioesite`.
+O repositório oficial já existe, é privado e está conectado: `wscariott1988/Anuncio-e-site-2026` (URL real sem acento). O projeto da Vercel também está conectado a ele e o domínio `anuncioesite.com.br` aponta para a Vercel. O repositório atual contém o site Astro; a branch `rebuild/astro` foi integrada à branch principal e não é mais a via de trabalho.
 
 ### 6.2 Publicação a cada commit
 
-A branch principal será `main`.
+A branch principal atual é `master` (a stack chegou ao repositório por meio da rebuild `rebuild/astro`, já incorporada). Se no futuro a branch for renomeada para `main`, este documento e as configurações da Vercel devem ser atualizados em conjunto.
 
 Fluxo aprovado:
 
-- todo push para `main` gera uma publicação de produção;
+- todo push para a branch principal (`master`) gera uma publicação de produção;
 - o domínio principal recebe a versão mais recente após build bem-sucedido;
-- branches alternativas poderão gerar URLs de pré-visualização para alterações maiores;
+- branches alternativas poderão gerar URLs de pré-visualização para alterações maiores — a branch `feat/home-v1` usa esse recurso;
 - um build com erro não deverá substituir a última versão estável;
 - se uma versão publicada tiver problema, usar rollback da plataforma ou reverter o commit.
 
-Como cada commit em `main` poderá ir ao ar, a IA deverá executar as verificações obrigatórias antes de enviar o código.
+Como cada commit na branch principal poderá ir ao ar, a IA deverá executar as verificações obrigatórias antes de enviar o código.
 
 ### 6.3 Construção diretamente no domínio
 
@@ -837,10 +837,11 @@ Durante a implementação:
 
 1. Antes do lançamento comercial, Willian manterá a Vercel em um plano compatível ou escolherá outra hospedagem?
 2. Qual número de WhatsApp será publicado?
-3. Qual será o nome definitivo do repositório no GitHub? Recomendação: `anuncioesite`, se disponível.
-4. Os registros atuais da HostGator já permitem abrir corretamente o domínio com e sem `www`?
+3. Os registros atuais da HostGator já permitem abrir corretamente o domínio com e sem `www`?
 
-Essas pendências não impedem a documentação nem o primeiro protótipo. A hospedagem comercial e o WhatsApp precisam estar resolvidos antes do lançamento; o nome do repositório será definido quando ele for criado ou reorganizado.
+O nome do repositório foi resolvido na prática: o repositório oficial é `wscariott1988/Anuncio-e-site-2026`, privado e conectado à Vercel. Uma renomeação futura poderá ser decidida sem relação com estas pendências.
+
+Essas pendências não impedem a documentação nem o primeiro protótipo. A hospedagem comercial e o WhatsApp precisam estar resolvidos antes do lançamento; o projeto permanece em modo `construction` enquanto elas não forem fechadas.
 
 ## 20. Fontes técnicas consultadas
 

@@ -3,7 +3,9 @@
 **Data:** 12 de setembro de 2026
 **Contexto:** preparação da branch `rebuild/astro` para substituir o site Next.js por Astro, com teste em Preview na Vercel.
 
-## 1. Site atual em produção (branch `master`, Next.js)
+> **Atualização em 13/09/2026:** este documento registra o estado *em 12/09/2026*. Desde então a rebuild Astro foi integrada à branch principal `master` — a `rebuild/astro` não é mais a via de trabalho e o site público já é o Astro. A seção 1 (Next.js) é histórico referencial para migração e inventário de ativos; a seção 2 descreve a estrutura atual do projeto. A Vercel continua com `master` = produção e branches = Preview.
+
+## 1. Site anterior em produção (branch `master`, Next.js) — histórico
 
 ### 1.1 URLs
 
@@ -17,7 +19,7 @@
 | `/termos` | Página legal |
 
 - Domínio canônico: `https://www.anuncioesite.com.br` (sem `www` redireciona para canônico).
-- Repositório: `wscariott1988/Anuncio-e-site-2026` (URL real sem acento).
+- Repositório: `wscariott1988/Anuncio-e-site-2026` (URL real sem acento, privado).
 - Vercel: projeto `anuncio-e-site-2026`; `master` = produção; demais branches = Preview.
 
 ### 1.2 Arquivos importantes do site atual
@@ -45,7 +47,7 @@
 
 `GOOGLE_APPS_SCRIPT_WEB_APP_URL`, `GOOGLE_APPS_SCRIPT_SECRET`, `NEXT_PUBLIC_WHATSAPP_NUMBER`, `NEXT_PUBLIC_GTM_ID`, `NEXT_PUBLIC_GA4_ID`, `NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_ID`, `NEXT_PUBLIC_META_PIXEL_ID`.
 
-## 2. Rebuild Astro (branch `rebuild/astro`)
+## 2. Site Astro (estrutura atual, integrada à branch `master`)
 
 ### 2.1 Rotas do novo site
 
@@ -69,7 +71,7 @@
 
 `README.md`, `PRODUCT.md`, `docs/` (ARQUITETURA, CONTEUDO-SEO, DECISOES, DESIGN, FONTES, IMPLEMENTACAO, NOTEBOOKLM, OFERTA, ROADMAP, pesquisa/, referencias/).
 
-## 3. O que foi feito na branch `rebuild/astro`
+## 3. O que foi feito na branch `rebuild/astro` (concluído e integrado)
 
 - Removidos os arquivos Next.js do checkout da branch (`master` permanece intacto).
 - Copiados o Astro, as configurações, `public/` (vazio), `README.md`, `PRODUCT.md` e `docs/` do código novo.
