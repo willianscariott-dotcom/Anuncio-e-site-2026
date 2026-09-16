@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE, getWhatsAppUrl } from '../config/site';
+
+export const prerender = true;
+
+const whatsappUrl = getWhatsAppUrl();
+---
+
+<BaseLayout
+  title="Contato — Fale direto com Willian"
+  description="Fale direto com Willian, criador de sites e gestor de tráfego. Atendimento em Novo Hamburgo, Vale dos Sinos e remoto para todo o Brasil."
+>
+  <section class="section section--dark" aria-labelledby="contato-title">
+    <div class="container">
+      <p class="eyebrow">Contato</p>
+      <h1 id="contato-title">Fale diretamente com Willian.</h1>
+      <p class="contato__lead">
+        Atendimento feito por quem planeja e executa o projeto — sem central, protocolos ou repasse
+        para terceiros. Me chame no WhatsApp e respondo em horário comercial.
+      </p>
+      <div class="contato__actions">
+        <a
+          class="btn btn--primary"
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Falar com Willian no WhatsApp"
+        >
+          Falar com Willian no WhatsApp
+        </a>
+        <a class="contato__phone" href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+          {SITE.whatsapp.display}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--light" aria-labelledby="contato-infos">
+    <div class="container contato__grid">
+      <div>
+        <h2 id="contato-infos">Outros canais</h2>
+        <dl class="contato__list">
+          <div>
+            <dt>WhatsApp</dt>
+            <dd>
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                {SITE.whatsapp.display}
+              </a>
+              <span> — clique para abrir com mensagem pronta</span>
+            </dd>
+          </div>
+          <div>
+            <dt>E-mail</dt>
+            <dd>
+              <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+            </dd>
+          </div>
+          <div>
+            <dt>Atendimento</dt>
+            <dd>
+              Novo Hamburgo, Vale dos Sinos e remoto para todo o Brasil. Presencial quando fizer
+              sentido e houver disponibilidade.
+            </dd>
+          </div>
+        </dl>
+        <p class="contato__note">
+          Esta é a URL estável para divulgação. Se o número mudar no futuro, o endereço continuará o
+          mesmo: <code>/contato</code>.
+        </p>
+      </div>
+      <div class="contato__card">
+        <p class="eyebrow">Como prefere falar</p>
+        <p>
+          Me conte seu serviço e região atendida. Se já tiver site ou conta de anúncios, diga como
+          está hoje que avalio antes de propor.
+        </p>
+        <p class="contato__small">
+          Nenhum redirecionamento automático. Você decide quando abrir o WhatsApp.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

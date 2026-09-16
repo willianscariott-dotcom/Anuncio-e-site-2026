@@ -13,5 +13,15 @@ export const SITE = {
     role: 'criador de sites e gestor de tráfego pago',
   },
   repositoryUrl: '',
-  whatsapp: '',
+  whatsapp: {
+    display: '(51) 99940-2810',
+    number: '5551999402810',
+    message:
+      'Olá, Willian! Vim pelo site Anúncio e Site e gostaria de conversar sobre meu projeto.',
+  },
 } as const;
+
+export function getWhatsAppUrl(message?: string): string {
+  const text = encodeURIComponent(message ?? SITE.whatsapp.message);
+  return `https://wa.me/${SITE.whatsapp.number}?text=${text}`;
+}

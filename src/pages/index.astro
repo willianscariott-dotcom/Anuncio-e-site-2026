@@ -4,6 +4,11 @@ import Hero from '../components/home/Hero.astro';
 import Portfolio from '../components/home/Portfolio.astro';
 import Offer from '../components/home/Offer.astro';
 import Personal from '../components/home/Personal.astro';
+import Services from '../components/home/Services.astro';
+import Process from '../components/home/Process.astro';
+import Coverage from '../components/home/Coverage.astro';
+import Faq from '../components/home/Faq.astro';
+import FinalCta from '../components/home/FinalCta.astro';
 import { SITE } from '../config/site';
 
 export const prerender = true;
@@ -17,4 +22,9 @@ export const prerender = true;
   <Portfolio />
   <Offer />
   <Personal />
+  <Services />
+  <Process />
+  <Coverage />
+  <Faq />
+  <FinalCta />
 </BaseLayout>

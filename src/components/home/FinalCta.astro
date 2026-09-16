@@ -1,0 +1,33 @@
+---
+import { getWhatsAppUrl } from '../../config/site';
+
+const whatsappUrl = getWhatsAppUrl();
+---
+
+<section class="section section--dark final" aria-labelledby="final-title">
+  <div class="container final__inner">
+    <div>
+      <p class="eyebrow">Vamos conversar</p>
+      <h2 id="final-title">Uma página que representa bem o seu trabalho.</h2>
+      <p class="final__support">
+        Sem promessas exageradas — estrutura, clareza e acompanhamento direto para você receber
+        contatos com mais confiança.
+      </p>
+    </div>
+    <div class="final__actions">
+      <a
+        class="btn btn--primary"
+        href={whatsappUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar com Willian no WhatsApp"
+      >
+        Falar com Willian
+      </a>
+      <a class="btn btn--ghost" href="/contato">
+        {' '}
+        Ver página de contato{' '}
+      </a>
+    </div>
+  </div>
+</section>

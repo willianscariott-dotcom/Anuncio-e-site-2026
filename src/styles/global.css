@@ -540,6 +540,298 @@ img {
   font-weight: 700;
 }
 
+.personal__body .btn {
+  margin-top: 1rem;
+}
+
+.section__lead {
+  margin: 0;
+  font-size: 0.98rem;
+  color: inherit;
+  opacity: 0.8;
+  max-width: 34ch;
+  line-height: 1.5;
+}
+
+.section--light .section__lead {
+  color: var(--color-text-dark-muted);
+  opacity: 1;
+}
+
+.section--compact {
+  padding-block: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+/* Services — editorial, not cards */
+.services__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.5rem, 3vw, 3rem);
+  border-top: 1px solid var(--color-line-dark);
+  padding-top: 2rem;
+}
+
+.services__block h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.services__price {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.services__price span {
+  color: var(--color-accent);
+}
+
+.services__list {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+}
+
+.services__list li {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--color-line-dark);
+  font-size: 0.96rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.services__list li:last-child {
+  border-bottom: 0;
+}
+
+.services__list strong {
+  color: var(--color-text);
+}
+
+/* Process — editorial numbered */
+.process__list {
+  list-style: none;
+  margin: 0;
+  padding: 2rem 0 0;
+  border-top: 1px solid var(--color-line-light);
+}
+
+.process__item {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  gap: 1.25rem;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid var(--color-line-light);
+  align-items: start;
+}
+
+.process__num {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-text-dark);
+}
+
+.process__item h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+
+.process__item p {
+  margin: 0;
+  color: var(--color-text-dark-muted);
+  max-width: 56ch;
+}
+
+/* Coverage */
+.coverage__grid {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.coverage__body p {
+  margin: 0 0 0.75rem;
+  color: var(--color-text-muted);
+  max-width: 50ch;
+}
+
+.coverage__body strong {
+  color: var(--color-text);
+}
+
+/* FAQ — details/summary, no cards */
+.faq__list {
+  border-top: 1px solid var(--color-text-dark);
+  padding-top: 0.5rem;
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--color-line-light);
+  padding: 0;
+}
+
+.faq__item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1rem 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.faq__item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq__item summary::after {
+  content: '+';
+  font-weight: 800;
+  color: var(--color-accent);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.faq__item[open] summary::after {
+  content: '—';
+}
+
+.faq__item p {
+  margin: 0 0 1rem;
+  color: var(--color-text-dark-muted);
+  max-width: 68ch;
+  line-height: 1.6;
+}
+
+/* Final CTA */
+.final__inner {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 2rem;
+  align-items: end;
+}
+
+.final h2 {
+  font-size: clamp(1.9rem, 3.6vw, 2.8rem);
+  font-weight: 800;
+  max-width: 18ch;
+}
+
+.final__support {
+  color: var(--color-text-muted);
+  max-width: 46ch;
+}
+
+.final__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+/* Contato page */
+.contato__lead {
+  color: var(--color-text-muted);
+  max-width: 52ch;
+  font-size: 1.1rem;
+  line-height: 1.55;
+}
+
+.contato__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.75rem;
+}
+
+.contato__phone {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.15rem;
+}
+
+.contato__grid {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: start;
+}
+
+.contato__list {
+  margin: 1.25rem 0 0;
+}
+
+.contato__list div {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-line-light);
+}
+
+.contato__list div:last-child {
+  border-bottom: 0;
+}
+
+.contato__list dt {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.contato__list dd {
+  margin: 0;
+  color: var(--color-text-dark-muted);
+  line-height: 1.5;
+}
+
+.contato__list dd a {
+  color: var(--color-text-dark);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.contato__note {
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--color-text-dark-muted);
+}
+
+.contato__note code {
+  font-family: var(--font-body);
+  background: rgba(20, 22, 25, 0.06);
+  padding: 0.1rem 0.3rem;
+  border-radius: 2px;
+}
+
+.contato__card {
+  border: 1px solid var(--color-text-dark);
+  padding: 1.5rem;
+  background: #fff;
+}
+
+.contato__card p {
+  color: var(--color-text-dark-muted);
+}
+
+.contato__small {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
 /* Footer */
 .footer {
   background: var(--color-bg-2);
@@ -569,12 +861,17 @@ img {
 
 .footer__contact {
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.4rem;
 }
 
 .footer__contact a {
   font-weight: 700;
   text-decoration: none;
   border-bottom: 2px solid var(--color-accent);
+  width: fit-content;
 }
 
 .footer__base {
@@ -663,6 +960,27 @@ img {
 
   .footer__contact {
     text-align: left;
+    align-items: flex-start;
+  }
+
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process__item {
+    grid-template-columns: 3.5rem 1fr;
+  }
+
+  .coverage__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .final__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .contato__grid {
+    grid-template-columns: 1fr;
   }
 }
 

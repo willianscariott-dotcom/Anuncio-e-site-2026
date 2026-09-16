@@ -1,5 +1,7 @@
 ---
-import { SITE } from '../../config/site';
+import { SITE, getWhatsAppUrl } from '../../config/site';
+
+const whatsappUrl = getWhatsAppUrl();
 ---
 
 <footer class="footer">
@@ -15,7 +17,11 @@ import { SITE } from '../../config/site';
       </p>
     </div>
     <div class="footer__contact">
+      <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+        {SITE.whatsapp.display}
+      </a>
       <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+      <a href="/contato">Página de contato</a>
       <p class="footer__base">Novo Hamburgo · Vale dos Sinos · atendimento em todo o Brasil</p>
     </div>
   </div>

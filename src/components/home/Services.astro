@@ -1,0 +1,68 @@
+---
+import { getWhatsAppUrl } from '../../config/site';
+
+const whatsappUrl = getWhatsAppUrl();
+---
+
+<section class="section section--dark" id="servicos" aria-labelledby="servicos-title">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">Serviços</p>
+        <h2 id="servicos-title">O que entra no projeto, com escopo claro.</h2>
+      </div>
+      <p class="section__lead">
+        Preço depois do valor. Cada item abaixo corresponde ao que está descrito em oferta — sem
+        promessas soltas.
+      </p>
+    </div>
+
+    <div class="services__grid">
+      <div class="services__block" data-reveal>
+        <h3>Landing page</h3>
+        <p class="services__price">
+          a partir de <span>R$ 399</span>
+        </p>
+        <ul class="services__list" role="list">
+          <li>
+            Até 5 seções principais — cabeçalho e rodapé não contam, formulário dentro do contato
+            também não
+          </li>
+          <li>Formulário e botões com integração para WhatsApp</li>
+          <li>Duas rodadas de alterações antes da aprovação final</li>
+          <li>Entrega estimada entre 7 e 10 dias após materiais e alinhamento</li>
+          <li>
+            Hospedagem e manutenção por <strong>R$ 19,90/mês</strong> a partir do segundo mês;
+            primeiro período de 30 dias incluso, domínio não incluso
+          </li>
+        </ul>
+      </div>
+
+      <div class="services__block" data-reveal>
+        <h3>Campanhas e outros projetos</h3>
+        <ul class="services__list" role="list">
+          <li>
+            <strong>Google Ads</strong> a partir de <strong>R$ 390/mês</strong> para prestadores de
+            serviços — sem taxa de implementação no pacote básico. Verba paga direto ao Google
+          </li>
+          <li>
+            <strong>Meta Ads</strong> mediante análise e proposta personalizada
+          </li>
+          <li>
+            <strong>Sites institucionais e blogs</strong> sob orçamento, conforme páginas, conteúdo
+            e funcionalidades
+          </li>
+        </ul>
+        <a
+          class="btn btn--primary"
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Falar com Willian no WhatsApp sobre serviços"
+        >
+          Falar com Willian
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

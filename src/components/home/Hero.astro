@@ -1,5 +1,7 @@
 ---
-import { SITE } from '../../config/site';
+import { getWhatsAppUrl } from '../../config/site';
+
+const whatsappUrl = getWhatsAppUrl();
 ---
 
 <section class="hero" aria-labelledby="hero-title">
@@ -17,11 +19,18 @@ import { SITE } from '../../config/site';
         pequenos negócios. Você fala diretamente comigo em todas as etapas.
       </p>
       <div class="hero__actions">
-        <a class="btn btn--primary" href={`mailto:${SITE.email}`}>
+        <a
+          class="btn btn--primary"
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Falar com Willian no WhatsApp"
+        >
           Falar com Willian
         </a>
         <a class="btn btn--ghost" href="#trabalhos">
-          Ver trabalhos
+          {' '}
+          Ver trabalhos{' '}
         </a>
       </div>
     </div>
