@@ -1,8 +1,34 @@
 ---
-import { SITE } from '../../config/site';
+import { SITE, getWhatsAppUrl } from '../../config/site';
+
+const whatsappUrl = getWhatsAppUrl();
 ---
 
 <footer class="footer">
-  <p>{SITE.brand}</p>
-  <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+  <div class="container footer__inner">
+    <div>
+      <a class="footer__brand" href="/">
+        <span class="brand__mark" aria-hidden="true"></span>
+        {SITE.brand}
+      </a>
+      <p>
+        Criação de landing pages rápidas e campanhas no Google e Meta para prestadores de serviços e
+        pequenos negócios.
+      </p>
+    </div>
+    <div class="footer__contact">
+      <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+        {SITE.whatsapp.display}
+      </a>
+      <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+      <a href="/contato">Página de contato</a>
+      <p class="footer__base">Novo Hamburgo · Vale dos Sinos · atendimento em todo o Brasil</p>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>
+      © {new Date().getFullYear()} {SITE.brand}
+    </span>
+    <span>Novo Hamburgo · Brasil</span>
+  </div>
 </footer>

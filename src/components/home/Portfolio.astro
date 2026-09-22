@@ -1,0 +1,77 @@
+---
+import { Image } from 'astro:assets';
+import erpShot from '../../assets/images/portfolio/erp-essencial.webp';
+import brumShot from '../../assets/images/portfolio/mecanica-auto-brum.webp';
+import bsShot from '../../assets/images/portfolio/bs-montagem-de-moveis.webp';
+
+const works = [
+  {
+    num: '01',
+    name: 'ERP Essencial',
+    tag: 'Sistema / página de captura',
+    url: 'https://lp.erpessencial.com/',
+    text: 'Página publicada para apresentação do ERP Essencial. Estrutura direta de oferta e contato.',
+    img: erpShot,
+    alt: 'Captura real da página ERP Essencial',
+  },
+  {
+    num: '02',
+    name: 'Mecânica Auto Brum',
+    tag: 'Serviço local / socorro 24h',
+    url: 'https://www.mecanicaautobrum.com.br/',
+    text: 'Site publicado para oficina mecânica com foco em atendimento local e contato imediato.',
+    img: brumShot,
+    alt: 'Captura real do site Mecânica Auto Brum',
+  },
+  {
+    num: '03',
+    name: 'BS Montagem de Móveis',
+    tag: 'Prestador de serviço / orçamento',
+    url: 'https://www.bsmontagemdemoveis.com.br/',
+    text: 'Site publicado para montador de móveis com foco em orçamento rápido pelo WhatsApp.',
+    img: bsShot,
+    alt: 'Captura real do site BS Montagem de Móveis',
+  },
+];
+---
+
+<section class="section section--light" id="trabalhos" aria-labelledby="trabalhos-title">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">Portfólio</p>
+        <h2 id="trabalhos-title">Trabalhos publicados para negócios reais.</h2>
+      </div>
+      <div class="section__count" aria-hidden="true">
+        03
+      </div>
+    </div>
+
+    <div>
+      {works.map((work, i) => (
+        <article class={`work${i % 2 === 1 ? ' work--flip' : ''}`} data-reveal>
+          <figure class="work__media">
+            <Image
+              src={work.img}
+              alt={work.alt}
+              widths={[640, 960, 1280]}
+              sizes="(max-width: 900px) 100vw, 58vw"
+              loading={i === 0 ? 'eager' : 'lazy'}
+            />
+          </figure>
+          <div class="work__body">
+            <div class="work__num" aria-hidden="true">
+              {work.num}
+            </div>
+            <h3>{work.name}</h3>
+            <p class="work__tag">{work.tag}</p>
+            <p>{work.text}</p>
+            <a class="work__link" href={work.url} target="_blank" rel="noopener noreferrer">
+              Visitar site publicado
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

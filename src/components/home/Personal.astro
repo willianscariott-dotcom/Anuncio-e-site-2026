@@ -1,0 +1,44 @@
+---
+import { Image } from 'astro:assets';
+import willianPhoto from '../../assets/images/willian-scariott-atendimento.webp';
+import { getWhatsAppUrl } from '../../config/site';
+
+const whatsappUrl = getWhatsAppUrl();
+---
+
+<section class="section section--light" id="atendimento" aria-labelledby="atendimento-title">
+  <div class="container personal__grid">
+    <figure class="personal__photo" data-reveal>
+      <Image
+        src={willianPhoto}
+        alt="Willian Scariott, criador de sites e gestor de tráfego"
+        widths={[420, 640, 880]}
+        sizes="(max-width: 900px) 100vw, 38vw"
+        loading="lazy"
+      />
+    </figure>
+    <div class="personal__body">
+      <p class="eyebrow">Atendimento pessoal</p>
+      <h2 id="atendimento-title">Você não cai em uma central. Fala comigo.</h2>
+      <p data-reveal>
+        Sou criador de sites e gestor de tráfego pago há 4 anos. Ao longo desse período construí
+        dezenas de sites e landing pages para prestadores de serviços e pequenos negócios.
+      </p>
+      <p data-reveal>
+        Do primeiro contato ao suporte, o atendimento é feito diretamente por mim. Você fala com
+        quem planeja, desenvolve e publica o projeto — sem central de atendimento, protocolos ou
+        repasse para terceiros.
+      </p>
+      <p class="personal__sign">Willian Scariott — Novo Hamburgo · Vale dos Sinos</p>
+      <a
+        class="btn btn--primary"
+        href={whatsappUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar com Willian no WhatsApp"
+      >
+        Falar com Willian
+      </a>
+    </div>
+  </div>
+</section>

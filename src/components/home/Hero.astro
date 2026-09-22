@@ -1,0 +1,42 @@
+---
+import { getWhatsAppUrl } from '../../config/site';
+
+const whatsappUrl = getWhatsAppUrl();
+---
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__squares" aria-hidden="true">
+    <span class="hero__square hero__square--1"></span>
+    <span class="hero__square hero__square--2"></span>
+    <span class="hero__square hero__square--3"></span>
+  </div>
+  <div class="container hero__inner">
+    <div>
+      <p class="hero__kicker">Landing pages + Google e Meta</p>
+      <h1 id="hero-title">Seu cliente já está procurando. Seu site precisa convencer.</h1>
+      <p class="hero__lead">
+        Crio landing pages rápidas e campanhas no Google e Meta para prestadores de serviços e
+        pequenos negócios. Você fala diretamente comigo em todas as etapas.
+      </p>
+      <div class="hero__actions">
+        <a
+          class="btn btn--primary"
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Falar com Willian no WhatsApp"
+        >
+          Falar com Willian
+        </a>
+        <a class="btn btn--ghost" href="#trabalhos">
+          {' '}
+          Ver trabalhos{' '}
+        </a>
+      </div>
+    </div>
+    <aside class="hero__meta" aria-label="Área de atendimento">
+      <strong>Atendimento direto</strong>
+      <span>Novo Hamburgo · Vale dos Sinos · atendimento em todo o Brasil</span>
+    </aside>
+  </div>
+</section>

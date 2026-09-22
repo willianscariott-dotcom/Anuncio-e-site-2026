@@ -1,8 +1,8 @@
 # PRODUCT.md — Anúncio e Site
 
-**Versão:** 0.3  
-**Data:** 11 de setembro de 2026  
-**Status:** visão do produto consolidada; pendências restantes identificadas e detalhadas nos documentos especializados  
+**Versão:** 0.4  
+**Data:** 13 de setembro de 2026  
+**Status:** visão do produto consolidada; fundação Astro e deploy inicial concluídos; pendências restantes identificadas e detalhadas nos documentos especializados  
 **Responsável pelo produto:** Willian Souza
 
 ## 1. Visão do negócio
@@ -290,11 +290,10 @@ Cliques em botões não devem ser apresentados como leads confirmados. Números 
 - conteúdo essencial entregue no HTML, com páginas estáticas sempre que possível e JavaScript mínimo;
 - Keystatic Cloud integrado ao GitHub para editar artigos e estudos de caso;
 - conteúdo longo em Markdoc e versionado no repositório;
-- repositório privado no GitHub;
-- publicação automática pela Vercel a cada alteração aprovada na branch principal;
-- previews separados para mudanças maiores;
-- `https://www.anuncioesite.com.br` como endereço canônico, com redirecionamento permanente do domínio sem `www`;
-- `noindex, nofollow` durante a construção no domínio real;
+- repositório privado no GitHub: `wscariott1988/Anuncio-e-site-2026` (URL sem acento), conectado à Vercel;
+- publicação automática pela Vercel a cada alteração aprovada na branch principal, com previews para branches de mudanças maiores;
+- `https://www.anuncioesite.com.br` como endereço canônico, registrado na HostGator e apontando para a Vercel, com redirecionamento permanente do domínio sem `www`;
+- `noindex, nofollow` durante a construção no domínio real (modo `construction`, `SITE_STATE` não alterado);
 - GTM e GA4 instalados depois que o site estiver pronto;
 - formulário próprio fora do lançamento inicial; o canal de conversão será o WhatsApp.
 
@@ -332,15 +331,14 @@ O plano Vercel Hobby poderá ser usado durante a construção, mas não está ap
 
 ### 18.3 Podem ser resolvidas durante o protótipo
 
-1. nome definitivo do repositório, com `anuncioesite` como recomendação se estiver disponível;
-2. códigos exatos das cores, escala tipográfica, componentes e animações;
-3. escolha da foto de Willian e das capturas dos projetos;
-4. horário comercial exato que poderá ser publicado;
-5. validação das pautas no Planejador de Palavras-chave;
-6. nota pública sobre o uso de IA nos artigos;
-7. política separada para o GPTBot.
+1. códigos exatos das cores, escala tipográfica, componentes e animações;
+2. escolha da foto de Willian e das capturas dos projetos;
+3. horário comercial exato que poderá ser publicado;
+4. validação das pautas no Planejador de Palavras-chave;
+5. nota pública sobre o uso de IA nos artigos;
+6. política separada para o GPTBot.
 
-O registro completo, inclusive decisões substituídas, está em `docs/DECISOES.md`.
+O registro completo, inclusive decisões substituídas, está em `docs/DECISOES.md`. O nome definitivo do repositório foi superado na prática: o repositório oficial já existe e está conectado como `wscariott1988/Anuncio-e-site-2026`; uma eventual renomeação futura seguirá o fluxo de decisão dos documentos.
 
 ## 19. Regra de uso deste documento
 
