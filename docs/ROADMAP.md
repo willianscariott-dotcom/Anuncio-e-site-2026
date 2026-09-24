@@ -383,7 +383,10 @@ Criar um sistema consistente que permita montar as páginas sem copiar estrutura
 - `/blog/{artigo}/`
 - `/landing-pages/montador-de-moveis/`
 - `/criacao-de-sites-novo-hamburgo/`
+- `/contato`
 - `/politica-de-privacidade/`
+
+Rotas técnicas já publicadas: `/404` (página de erro útil) e o `robots.txt` com `noindex, nofollow` ativo em todas as páginas.
 
 ### Regras de copy e conversão
 

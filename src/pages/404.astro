@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Página não encontrada"
+  description="O endereço que você tentou abrir não existe ou foi movido. Volte para a página inicial ou fale direto com Willian."
+  robots="noindex, follow"
+>
+  <section class="section section--dark notfound" aria-labelledby="notfound-title">
+    <div class="container">
+      <p class="eyebrow">Erro 404</p>
+      <h1 id="notfound-title" class="notfound__title">
+        Página não encontrada.
+      </h1>
+      <p class="notfound__lead">
+        O endereço que você tentou abrir não existe ou foi movido. Sem problema: dá para voltar para
+        o caminho certo a partir daqui.
+      </p>
+      <div class="notfound__actions">
+        <a class="btn btn--primary" href="/">
+          Voltar para a página inicial
+        </a>
+      </div>
+      <ul class="notfound__links">
+        <li>
+          <a href="/#trabalhos">Ver trabalhos publicados</a>
+        </li>
+        <li>
+          <a href="/#oferta">Conhecer a oferta</a>
+        </li>
+        <li>
+          <a href="/contato">Falar com Willian</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .notfound__title {
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-weight: 800;
+    max-width: 16ch;
+  }
+
+  .notfound__lead {
+    color: var(--color-text-muted);
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    line-height: 1.55;
+    max-width: 46ch;
+  }
+
+  .notfound__actions {
+    margin-top: 1.75rem;
+  }
+
+  .notfound__links {
+    list-style: none;
+    margin: 2.5rem 0 0;
+    padding: 0;
+    border-top: 1px solid var(--color-line-dark);
+  }
+
+  .notfound__links li {
+    border-bottom: 1px solid var(--color-line-dark);
+  }
+
+  .notfound__links a {
+    display: block;
+    padding: 0.9rem 0;
+    font-weight: 700;
+    text-decoration: none;
+  }
+</style>
