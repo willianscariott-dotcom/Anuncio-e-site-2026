@@ -1,8 +1,8 @@
 # ARQUITETURA.md — Páginas, navegação e jornadas
 
-**Versão:** 0.3  
-**Data:** 11 de setembro de 2026  
-**Status:** arquitetura auditada e alinhada à implementação; projetos dos estudos de caso ainda precisam ser selecionados  
+**Versão:** 0.4
+**Data:** 24 de setembro de 2026
+**Status:** arquitetura auditada e alinhada à implementação; `/contato`, `/politica-de-privacidade/` e página 404 já publicados; projetos dos estudos de caso ainda precisam ser selecionados
 **Responsável:** Willian Souza
 
 ## 1. Função deste documento
@@ -69,7 +69,7 @@ A arquitetura deverá facilitar o acesso a:
 
 ### 2.5 Conversão direta
 
-O principal caminho de conversão será o WhatsApp. Não haverá página de contato obrigatória no lançamento. O botão “Falar com Willian” permanecerá disponível nas páginas comerciais e poderá abrir mensagens diferentes de acordo com a origem do visitante.
+O principal caminho de conversão será o WhatsApp. O botão “Falar com Willian” permanecerá disponível nas páginas comerciais e poderá abrir mensagens diferentes de acordo com a origem do visitante. Uma página `/contato` simples foi publicada para reunir canais de atendimento, mas sem formulário próprio; ela complementa o WhatsApp, que segue sendo o caminho principal.
 
 ## 3. Mapa do site para o lançamento
 
@@ -88,10 +88,11 @@ O principal caminho de conversão será o WhatsApp. Não haverá página de cont
 | Landing page para montadores | `/landing-pages/montador-de-moveis/` | Links contextuais | Vender a solução específica para montadores de móveis |
 | Página regional | `/criacao-de-sites-novo-hamburgo/` | Rodapé e links contextuais | Apresentar o atendimento em Novo Hamburgo e região |
 | Política de privacidade | `/politica-de-privacidade/` | Rodapé | Explicar o tratamento de informações e ferramentas utilizadas |
+| Contato | `/contato/` | Rodapé | Reunir canais de atendimento e reforçar o WhatsApp |
 
 ### 3.1 Páginas que não serão criadas no lançamento
 
-- página de contato separada;
+- formulário próprio de contato;
 - página genérica de preços;
 - páginas copiadas para várias cidades;
 - dezenas de páginas por profissão;
@@ -99,7 +100,7 @@ O principal caminho de conversão será o WhatsApp. Não haverá página de cont
 - página de autor separada, enquanto Willian for o único autor;
 - áreas de cliente, login ou orçamento automático.
 
-Os preços principais aparecerão na página inicial e nas páginas dos respectivos serviços. O WhatsApp substituirá a necessidade inicial de uma página de contato.
+Os preços principais aparecerão na página inicial e nas páginas dos respectivos serviços. O WhatsApp permanece o principal caminho de conversão; a página `/contato` publicada reúne os canais sem substituí-lo.
 
 ## 4. Navegação principal
 

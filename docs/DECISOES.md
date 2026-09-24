@@ -1,8 +1,8 @@
 # DECISOES.md — Registro consolidado do projeto
 
-**Versão:** 1.3
-**Data:** 14 de setembro de 2026
-**Estado:** decisões consolidadas; fundação Astro e deploy inicial concluídos; home v1 rejeitada; home v2 em construção na branch `feat/home-v2`; pendências ativas identificadas
+**Versão:** 1.3 → 1.4
+**Data:** 14 de setembro de 2026 → 24 de setembro de 2026
+**Estado:** decisões consolidadas; fundação Astro e deploy concluídos; home v2 em construção na branch `feat/home-v2`; páginas `/contato`, `/politica-de-privacidade/` e 404 em produção; noindex continua ativo
 **Responsável pelas decisões:** Willian Souza
 
 ## 1. Função deste documento
@@ -115,7 +115,7 @@ Este é um índice de decisões. Os detalhes de execução permanecem nos docume
 |---|---|---|
 | ARQ-001 | CONFIRMADO | A página deve primeiro mostrar o valor de uma boa presença digital e a possibilidade de gerar oportunidades; o preço aparece depois. A comunicação pode falar em conquistar clientes e receber contatos, mas não prometer resultado. |
 | ARQ-002 | CONFIRMADO | O menu principal terá **Serviços**, **Portfólio**, **Blog**, **Sobre** e **Falar com Willian**. Em Serviços: Landing Pages, Sites, Google Ads e Meta Ads. |
-| ARQ-003 | CONFIRMADO | O site da Anúncio e Site será lançado sem formulário próprio e sem página de contato obrigatória. Os CTAs comerciais levarão ao WhatsApp com mensagens adequadas à origem do clique. |
+| ARQ-003 | CONFIRMADO | O site da Anúncio e Site será lançado sem formulário próprio; a página `/contato` publicada reúne canais e os CTAs levam ao WhatsApp com mensagens adequadas à origem do clique. |
 | ARQ-004 | CONFIRMADO | O lançamento deverá apresentar pelo menos **3 estudos de caso reais**. Projetos poderão ser anônimos até existir autorização para citar nomes. Não inventar cliente, depoimento, métrica ou resultado. |
 | ARQ-005 | CONFIRMADO | O primeiro recorte profissional será **montadores de móveis**, sem limitar o restante da marca a esse nicho. O caminho aprovado é `/landing-pages/montador-de-moveis/`. |
 | ARQ-006 | CONFIRMADO | Haverá uma página regional com foco em Novo Hamburgo e contexto para Vale dos Sinos, Porto Alegre e Grande Porto Alegre. Menções a cidades devem ser verdadeiras e úteis; páginas futuras não poderão ser cópias com o nome da cidade trocado. |
@@ -134,7 +134,10 @@ Este é um índice de decisões. Os detalhes de execução permanecem nos docume
 - `/blog/{artigo}/`
 - `/landing-pages/montador-de-moveis/`
 - `/criacao-de-sites-novo-hamburgo/`
+- `/contato`
 - `/politica-de-privacidade/`
+
+**Publicadas nesta etapa (24/09/2026):** `/contato` (reúne canais, sem formulário), `/politica-de-privacidade/` e `/404` (página útil de erro). O `noindex` continua ativo em todas as páginas.
 
 ## 6. Decisões ativas — conteúdo, SEO e visibilidade em IA
 
