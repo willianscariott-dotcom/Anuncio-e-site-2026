@@ -5,10 +5,46 @@ const whatsappUrl = getWhatsAppUrl();
 ---
 
 <section class="hero" aria-labelledby="hero-title">
-  <div class="hero__squares" aria-hidden="true">
-    <span class="hero__square hero__square--1"></span>
-    <span class="hero__square hero__square--2"></span>
-    <span class="hero__square hero__square--3"></span>
+  <div class="hero__wireframe" aria-hidden="true">
+    <div class="hero__wf hero__wf--back" data-wf-layer data-wf-depth="3">
+      <div class="hero__wf-frame">
+        <div class="hero__wf-bar"></div>
+        <div class="hero__wf-line hero__wf-line--full"></div>
+        <div class="hero__wf-line hero__wf-line--two"></div>
+        <div class="hero__wf-line hero__wf-line--half"></div>
+        <div class="hero__wf-cta"></div>
+        <div class="hero__wf-cols">
+          <div class="hero__wf-col"></div>
+          <div class="hero__wf-col"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__wf hero__wf--mid" data-wf-layer data-wf-depth="7">
+      <div class="hero__wf-frame">
+        <div class="hero__wf-bar"></div>
+        <div class="hero__wf-line hero__wf-line--full"></div>
+        <div class="hero__wf-line hero__wf-line--two"></div>
+        <div class="hero__wf-line hero__wf-line--half"></div>
+        <div class="hero__wf-cta"></div>
+        <div class="hero__wf-cols">
+          <div class="hero__wf-col"></div>
+          <div class="hero__wf-col"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__wf hero__wf--front" data-wf-layer data-wf-depth="12">
+      <div class="hero__wf-frame">
+        <div class="hero__wf-bar"></div>
+        <div class="hero__wf-line hero__wf-line--full"></div>
+        <div class="hero__wf-line hero__wf-line--two"></div>
+        <div class="hero__wf-line hero__wf-line--half"></div>
+        <div class="hero__wf-cta"></div>
+        <div class="hero__wf-cols">
+          <div class="hero__wf-col"></div>
+          <div class="hero__wf-col"></div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="container hero__inner">
     <div>
@@ -40,3 +76,7 @@ const whatsappUrl = getWhatsAppUrl();
     </aside>
   </div>
 </section>
+
+<script>
+  import '../../scripts/hero-motion.ts';
+</script>
