@@ -1,6 +1,7 @@
 // Parallax for the hero.
 // Desktop (fine pointer + viewport >= 900px): the wireframe layers follow the pointer
-// while it is inside the hero (back 3px, mid 7px, front 12px) and drift back to center on leave.
+// while it is inside the hero (back 9px, mid 20px, front 31px) and drift back to center on leave.
+// The front layer may also rotate very slightly (data-wf-rotate, up to 0.7deg).
 // Mobile (coarse pointer or viewport < 900px): the wireframe is hidden via CSS; only the
 // technical grid background (.hero::before) moves gently with scroll (max 56px) while the
 // hero crosses the viewport.
@@ -17,7 +18,8 @@ function initHeroMotion(): void {
   const BG_MAX = 56;
   const layers = Array.from(document.querySelectorAll<HTMLElement>('[data-wf-layer]'));
   const depths = layers.map((layer) => Number(layer.dataset.wfDepth ?? 0));
-  const current = layers.map(() => ({ x: 0, y: 0 }));
+  const rotations = layers.map((layer) => Number(layer.dataset.wfRotate ?? 0));
+  const current = layers.map(() => ({ x: 0, y: 0, r: 0 }));
   const round = (value: number): number => Math.round(value * 100) / 100;
   const clampUnit = (value: number): number => Math.max(-1, Math.min(1, value));
   const clamp01 = (value: number): number => Math.max(0, Math.min(1, value));
@@ -83,14 +85,18 @@ function initHeroMotion(): void {
     for (let i = 0; i < layers.length; i++) {
       const layer = layers[i];
       const depth = depths[i] ?? 0;
-      const position = current[i] ?? { x: 0, y: 0 };
+      const rotation = rotations[i] ?? 0;
+      const position = current[i] ?? { x: 0, y: 0, r: 0 };
       const targetX = pointerX * depth;
       const targetY = pointerY * depth;
+      const targetR = pointerX * rotation;
       position.x += (targetX - position.x) * 0.12;
       position.y += (targetY - position.y) * 0.12;
+      position.r += (targetR - position.r) * 0.12;
       if (Math.abs(position.x) < 0.01) position.x = 0;
       if (Math.abs(position.y) < 0.01) position.y = 0;
-      const transform = `translate3d(${round(position.x)}px, ${round(position.y)}px, 0)`;
+      if (Math.abs(position.r) < 0.01) position.r = 0;
+      const transform = `translate3d(${round(position.x)}px, ${round(position.y)}px, 0) rotate(${round(position.r)}deg)`;
       if (layer.style.transform !== transform) {
         layer.style.transform = transform;
       }
